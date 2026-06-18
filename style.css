@@ -1,0 +1,39 @@
+/* Custom Roman Theme Styles */
+:root {
+    --roman-crimson: #800020;
+    --roman-gold: #D4AF37;
+    --roman-marble: #FDFBF7;
+    --roman-dark: #1C1A17;
+}
+
+body {
+    background-color: var(--roman-marble);
+    font-family: 'Georgia', serif;
+    color: var(--roman-dark);
+}
+
+.navbar-roman {
+    background-color: var(--roman-crimson);
+    border-bottom: 3px solid var(--roman-gold);
+}
+
+.navbar-roman .navbar-brand, 
+.navbar-roman .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-roman .nav-link:hover,
+.navbar-roman .nav-link.active {
+    color: var(--roman-gold) !important;
+}
+
+.card-header-roman {
+    background-color: var(--roman-crimson);
+    color: white;
+}
+
+footer {
+    background-color: var(--roman-dark);
+    color: #ffffff;
+    border-top: 3px solid var(--roman-crimson);
+}
