@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Rome | Citizen Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-msg {
+            color: #dc3545;
+            font-size: 0.875em;
+            margin-top: 0.25rem;
+            font-weight: bold;
+        }
+        .success-banner {
+            background-color: #d1e7dd;
+            color: #0f5132;
+            border: 1px solid #badbcc;
+            padding: 1rem;
+            border-radius: 0.375rem;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-roman sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Become a Member
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
+                            <li><a class="dropdown-menu-item dropdown-item fw-bold text-danger" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Section Layout -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow border-0">
+                    <div class="card-header card-header-roman text-center py-3">
+                        <h4 class="mb-0 text-white fw-bold">Create Citizens Account</h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <p class="text-center text-muted">Join the republic archive to access premium research maps.</p>
+                        
+                       <form action="#" method="post" id="registrationForm" class="registration-form" autocomplete="on">
+    <h2>Registration Form</h2>
+    <div class="mb-3">
+       <label class="form-label fw-bold"> Username</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"><br>
+        <p id="fullNameError" class="error-msg"></p>
+    </div>
+  <div class="mb-3">
+        <label class="form-label fw-bold">email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+        <p id="emailError" class="error-msg"></p>
+    </div>
+   <div class="mb-3">
+        <label class="form-label fw-bold">phonne number</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br>
+        <p id="phoneError" class="error-msg "></p>
+    </div>
+   <div class="mb-3">
+        <label class="form-label fw-bold">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Create a password"><br>
+        <p id="passwordError" class="error-msg"></p>
+    </div>
+    <div class="mb-3">
+        <label class="form-label fw-bold">Confirm Password</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"><br>
+        <p id="confirmPasswordError" class="error-msg"></p>
+    </div>
+    <button type="submit" class="btn btn-danger w-100 fw-bold mt-2" style="background-color: var(--roman-crimson); border-color: var(--roman-gold);">Register Account</button>
+    </form>
+
+    
+    <div id="successMessage"></div>
+
+    <p class="text-center mt-3 mb-0 text-muted">Already a member? <a href="membership.html" class="fw-bold text-danger text-decoration-underline">Log In here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 mt-5"><div class="container"><p class="mb-0 text-white">&copy; 2026 History of Rome Educational Project.</p></div></footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Dedicated Advanced Registration JavaScript Feature -->
+    <script>
+    // Create a function to validate the form
+    // Create a listener for the form submission
+    document.getElementById('registrationForm').addEventListener('submit', function(event){
+        event.preventDefault(); // Prevent the default form submission
+
+        // Clear previous error messages
+        document.getElementById('fullNameError').textContent = '';
+        document.getElementById('emailError').textContent = '';
+        document.getElementById('phoneError').textContent = '';
+        document.getElementById('passwordError').textContent = '';
+        document.getElementById('confirmPasswordError').textContent = '';
+        document.getElementById('successMessage').textContent = '';
+
+        // Flag to track if the form is valid
+        let isValid = true;
+
+        // Validate Full Name
+        const fullName = document.getElementById('fullName').value.trim();
+        const namePattern = /^[a-zA-Z\s']+$/; // Regular expression for validating full name (letters, spaces, and apostrophes)
+        if (fullName === '') { // Check if the full name is empty
+            document.getElementById('fullNameError').textContent = 'Full Name is required.';
+            isValid = false;
+        }else if(fullName.length < 3){ // Check if the full name is less than 3 characters
+            document.getElementById('fullNameError').textContent = 'Full Name must be at least 3 characters long.';
+            isValid = false;
+        }else if(!namePattern.test(fullName)){ // Check if the full name contains only letters, spaces, and apostrophes
+            document.getElementById('fullNameError').textContent = 'Full Name can only contain letters, spaces, and apostrophes.';
+            isValid = false;
+        }
+
+        // Validate Email
+        const email = document.getElementById('email').value.trim();
+        const validDomains = ['gmail.com', 'yahoo.com', 'outlook.com', 'strathmore.edu', 'o365.strathmore.edu']; // List of valid email domains
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression for validating email format
+        const emailDomain = email.split('@')[1]; // Get the domain part of the email
+        if (email === '') { // Check if the email is empty
+            document.getElementById('emailError').textContent = 'Email is required.';
+            isValid = false;
+        } else if (!emailPattern.test(email)) { // Check if the email is in a valid format
+            document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+            isValid = false;
+        } else if (!validDomains.includes(emailDomain)) { // Check if the email domain is valid
+            document.getElementById('emailError').textContent = 'Email domain must be one of the following: ' + validDomains.join(', ') + '.';
+            isValid = false;
+        }
+
+        // Validate Phone Number
+        const phone = document.getElementById('phone').value.trim();
+        const phonePattern = /^\+?\d{3,15}$/; // Regular expression for validating phone number (3 to 15 digits) with an optional leading plus sign
+        if (phone === '') { // Check if the phone number is empty
+            document.getElementById('phoneError').textContent = 'Phone number is required.';
+            isValid = false;
+        } else if (!phonePattern.test(phone)) { // Check if the phone number is in a valid format
+            document.getElementById('phoneError').textContent = 'Please enter a valid phone number (3 to 15 digits) with an optional leading plus sign.';
+            isValid = false;
+        }
+
+        if(isValid){
+            document.getElementById('successMessage').textContent = 'Registration successful!';
+            document.getElementById('successMessage').className = 'success'; // Set the class to success for styling
+        }else{
+            document.getElementById('successMessage').textContent = 'Please fix the error(s) above.';
+            document.getElementById('successMessage').className = 'error'; // Set the class to error for styling
+        }
+
+    });
+</script>
+</body>
+</html>
