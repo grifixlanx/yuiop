@@ -1,4 +1,4 @@
-/* Custom Roman Theme Styles */
+
 :root {
     --roman-crimson: #800020;
     --roman-gold: #D4AF37;
@@ -32,8 +32,28 @@ body {
     color: white;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* Pushes the footer down to fill the empty space */
+}
 footer {
     background-color: var(--roman-dark);
     color: #ffffff;
     border-top: 3px solid var(--roman-crimson);
+}
+.dropdown-menu {
+    background-color: var(--roman-marble);
+    border: 2px solid var(--roman-gold);
+}
+.dropdown-menu-item:hover {
+    background-color: var(--roman-crimson) !important;
+    color: white !important;
 }
