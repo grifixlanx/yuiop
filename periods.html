@@ -6,74 +6,835 @@
     <title>History of Rome | Historical Periods</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+     <style>
+        /* ==========================================================================
+           Custom Timeline Styles (Integrated & Cleaned)
+           ========================================================================== */
+        
+        .timeline-section {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        /* Timeline Container */
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* The central spine line */
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #3a506b;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            z-index: 1;
+        }
+
+        /* Timeline Row Wrapper */
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: transparent;
+            width: 50%;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        /* Alternating Position Layout */
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        /* Central Dots / Nodes */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #c5a880; /* Default Beige Node */
+            border: 4px solid #ffffff; /* Changed to white to blend with your site background */
+            top: 25px;
+            border-radius: 50%;
+            z-index: 3;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        /* Blue Variant Nodes */
+        .timeline-item.blue-node::after {
+            background-color: #1d3557;
+        }
+
+        /* Timeline Content Cards */
+        .timeline-card {
+            padding: 15px 20px;
+            background-color: #f4f1ea;
+            color: #1d2026;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: inline-block;
+            max-width: 85%;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Georgia', 'Times New Roman', serif;
+        }
+
+        /* Card Triangles / Pointers */
+        .timeline-card::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 26px;
+            width: 0;
+            z-index: 4;
+            border: solid transparent;
+        }
+
+        .timeline-item.left .timeline-card::before {
+            right: -10px;
+            border-width: 8px 0 8px 10px;
+            border-left-color: #f4f1ea;
+        }
+
+        .timeline-item.right .timeline-card::before {
+            left: -10px;
+            border-width: 8px 10px 8px 0;
+            border-right-color: #f4f1ea;
+        }
+
+        /* Typography Styling Inside Cards */
+        .timeline-card .date {
+            font-size: 0.95rem;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 6px;
+        }
+
+        .timeline-card .content {
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        /* Multi-Reign / Divided Section Styling */
+        .split-header {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #c5a880;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            color: #0a1128;
+        }
+
+        .reign-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .reign-list li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: #1d2026;
+        }
+
+        .reign-list strong {
+            display: block;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Mid-Timeline Informational Text Separator */
+        .timeline-info-node {
+            text-align: center;
+            width: 100%;
+            padding: 20px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .timeline-info-node .info-card {
+            background-color: #f4f1ea;
+            color: #1d2026;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: inline-block;
+            max-width: 60%;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            font-family: 'Georgia', serif;
+        }
+
+        /* Responsive Viewports (Mobile Screens) */
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+                text-align: left;
+            }
+            .timeline-item::after {
+                left: 21px;
+                right: auto;
+            }
+            .timeline-item.left .timeline-card::before, .timeline-item.right .timeline-card::before {
+                left: -10px;
+                border-width: 8px 10px 8px 0;
+                border-right-color: #f4f1ea;
+                border-left-color: transparent;
+            }
+            .timeline-card {
+                max-width: 100%;
+            }
+            .timeline-info-node .info-card {
+                max-width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
 <!-- Milestone 2 Navbar with Dropdown Feature -->
-<nav class="navbar navbar-expand-lg navbar-roman sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Become a Member
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
-    <li><a class="dropdown-menu-item dropdown-item" href="signup.html">Sign Up</a></li>
-    <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
-</ul>
-                </div>
-            </ul>
+   <nav class="navbar navbar-expand-lg navbar-roman sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                   <li class="nav-item"><a class="nav-link" href="about.html">About Romans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
+                    <li class="nav-item"><a class="nav-link" href="republic.html">The Republic</a></li>
+                    <li class="nav-item"><a class="nav-link" href="empire.html">The Empire</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Become a Member
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
+        <li><a class="dropdown-menu-item dropdown-item" href="signup.html">Sign Up</a></li>
+        <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
+    </ul>
+                    </div>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+        <header class="text-white text-center py-5" style="background: linear-gradient(rgba(139, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1531572753322-ad063cecc140?q=80&w=1200') center/cover no-repeat; border-bottom: 4px solid #D4AF37;">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold text-uppercase" style="font-family: 'Cinzel', serif; letter-spacing: 2px;">Chronology of Rome</h1>
+        </div>
+    </header>
+    
 
-    <main class="container my-5">
-        <h1 class="text-center mb-5 fw-bold text-uppercase">The Epochs of the Eternal City</h1>
-        
-        <div class="row g-4">
-            <!-- Regal Kingdom -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-header bg-dark text-warning fw-bold text-center">The Roman Kingdom</div>
-                    <div class="card-body">
-                        <h6 class="text-muted text-center mb-3">753 BC – 509 BC</h6>
-                        <p>The legendary era starting with Rome's foundation by Romulus. During this period, Rome was ruled sequentially by seven monarchs who established its earliest religious, political, and social institutions.</p>
+    <section class="timeline-section">
+            <div class="text-center mb-5">
+                <p class="text-muted">A detailed timeline tracing the rulers, splits, and milestones of the Roman world.</p>
+            </div>
+
+            <div class="timeline-container">
+
+                <!-- IMAGE 1 CONTENT -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">1200 BC</div>
+                        <div class="content">The Prisci Latini colonists migrate to Italy from the Danube region.</div>
                     </div>
                 </div>
-            </div>
-            <!-- The Republic -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-header card-header-roman fw-bold text-center">The Roman Republic</div>
-                    <div class="card-body">
-                        <h6 class="text-muted text-center mb-3">509 BC – 27 BC</h6>
-                        <p>Prompted by the overthrow of tyranny, Rome instituted a representative governance system guided by the Senate, consuls, and assemblies, managing immense territorial expansion before fracturing into civil wars.</p>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">April 21, 753 BC</div>
+                        <div class="content">Founding of Rome according to traditional story of Romulus and Remus.</div>
                     </div>
                 </div>
-            </div>
-            <!-- The Empire -->
-            <div class="col-md-4">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-header bg-secondary text-white fw-bold text-center">The Roman Empire</div>
-                    <div class="card-body">
-                        <h6 class="text-muted text-center mb-3">27 BC – 476 AD</h6>
-                        <p>Initiated under Caesar Augustus, this period centralizing absolute political authority under an Emperor. It fostered the Pax Romana, unmatched architectural engineering, and eventual division into East and West blocks.</p>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">753 – 716 BC</div>
+                        <div class="content">Reign of King Romulus</div>
                     </div>
                 </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">715 – 673 BC</div>
+                        <div class="content">Reign of King Numa Pompilius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">673 – 642 BC</div>
+                        <div class="content">Reign of King Tullus Hostilius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">642 – 616 BC</div>
+                        <div class="content">Reign of King Ancus Marcius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">616 – 579 BC</div>
+                        <div class="content">Reign of King Lucius Tarquinius Priscus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">579 – 534 BC</div>
+                        <div class="content">Reign of King Servius Tullius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">534 – 509 BC</div>
+                        <div class="content">Reign of King Lucius Tarquinius Superbus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">509 BC</div>
+                        <div class="content">Overthrow of the Roman monarchy</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">510 – 27 BC</div>
+                        <div class="content">Establishment of the Roman Republic</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">60 BC</div>
+                        <div class="content">Gaius Julius Caesar, Crassus and Pompey form the First Triumvirate.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">49 – 44 BC</div>
+                        <div class="content">Gaius Julius Caesar defies the Senate and appoints himself dictator for life. He reigns until he is assassinated on March 15, 44 BC.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">27 BC – AD 14</div>
+                        <div class="content">The senate grants Augustus the title of Caesar and he becomes the first Roman Emperor.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 14 – 37</div>
+                        <div class="content">Reign of Tiberius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 37 – 41</div>
+                        <div class="content">Reign of Caligula</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 41 – 54</div>
+                        <div class="content">Reign of Claudius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 54 – 68</div>
+                        <div class="content">Reign of Nero</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 68 – 69</div>
+                        <div class="content">Reign of Galba</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 69</div>
+                        <div class="content">Reign of Otho</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 69</div>
+                        <div class="content">Reign of Vitellius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 69 – 79</div>
+                        <div class="content">Reign of Vespasian</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 79 – 81</div>
+                        <div class="content">Reign of Titus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 81 – 96</div>
+                        <div class="content">Reign of Domitian</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 96 – 98</div>
+                        <div class="content">Reign of Nerva</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 98 – 117</div>
+                        <div class="content">Reign of Trajan</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 117 – 138</div>
+                        <div class="content">Reign of Hadrian</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 138 – 161</div>
+                        <div class="content">Reign of Antoninus Pius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 161 – 180</div>
+                        <div class="content">Co Reign of Marcus Aurelius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 161 – 169</div>
+                        <div class="content">Co Reign of Lucius Verus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 180 – 192</div>
+                        <div class="content">Reign of Commodus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 193</div>
+                        <div class="content">Reign of Pertinax</div>
+                    </div>
+                </div>
+
+                <!-- IMAGE 2 CONTENT -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 193</div>
+                        <div class="content">Reign of Didius Julianus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 193 – 211</div>
+                        <div class="content">Reign of Septimius Severus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 211</div>
+                        <div class="content">Co Reign of Geta</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 211 – 217</div>
+                        <div class="content">Co Reign of Caracalla</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 217 – 218</div>
+                        <div class="content">Reign of Macrinus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 218 – 222</div>
+                        <div class="content">Reign of Elagabalus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 222 – 235</div>
+                        <div class="content">Reign of Alexander Severus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 235 – 238</div>
+                        <div class="content">Reign of Maximus Thrax</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 238</div>
+                        <div class="content">Reign of Gordian I & Gordian II</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 238</div>
+                        <div class="content">Reign of Pupienus & Balbinus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 238 – 244</div>
+                        <div class="content">Reign of Gordian III</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 244 – 249</div>
+                        <div class="content">Reign of Phillippus Arabs</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 249 – 251</div>
+                        <div class="content">Reign of Decius</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 251 – 253</div>
+                        <div class="content">Reign of Trebonianus Gallus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 253</div>
+                        <div class="content">Reign of Aemilius Aemilianus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 253 – 260</div>
+                        <div class="content">Reign of Valerian<br><small class="text-muted">Gallic Empire splits off after death of Valerian</small></div>
+                    </div>
+                </div>
+
+                <!-- Divided Empire Block (Gallic split) -->
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="split-header">Roman Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 253 – 268</strong> Reign of Gallienus</li>
+                            <li><strong>AD 268 – 270</strong> Reign of Claudius II</li>
+                            <li><strong>AD 270</strong> Reign of Quintillus</li>
+                            <li><strong>AD 270 – 275</strong> Reign of Aurelian</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="split-header">Gallic Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 260 – 269</strong> Reign of Postumus</li>
+                            <li><strong>AD 269</strong> Reign of Laelianus</li>
+                            <li><strong>AD 269</strong> Reign of Marius</li>
+                            <li><strong>AD 269 – 271</strong> Reign of Victorinus</li>
+                            <li><strong>AD 271</strong> Reign of Domitianus</li>
+                            <li><strong>AD 271 – 274</strong> Reign of Tetricus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- IMAGE 3 CONTENT -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 275 – 276</div>
+                        <div class="content">Empire is reunited.<br>Reign of Tacitus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 276</div>
+                        <div class="content">Reign of Florianus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 276 – 282</div>
+                        <div class="content">Reign of Probus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="date">AD 282 – 283</div>
+                        <div class="content">Reign of Carus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 283 – 284</div>
+                        <div class="content">Reign of Numerian</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 283 – 285</div>
+                        <div class="content">Reign of Carinus</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="date">AD 284 – 288</div>
+                        <div class="content">Reign of Diocletian<br><small class="text-muted">Empire splits East & West</small></div>
+                    </div>
+                </div>
+
+                <!-- East vs West Split Block -->
+                <div class="timeline-item right">
+                    <div class="timeline-card">
+                        <div class="split-header">Eastern Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 286 – 305</strong> Reign of Diocletian</li>
+                            <li><strong>AD 305 – 311</strong> Reign of Galerius</li>
+                            <li><strong>AD 308 – 324</strong> Reign of Licinius</li>
+                            <li><strong>AD 310 – 313</strong> Reign of Maximinus Daia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="split-header">Western Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 286 – 305</strong> Reign of Maximian</li>
+                            <li><strong>AD 305 – 306</strong> Reign of Constantius I</li>
+                            <li><strong>AD 306 – 307</strong> Reign of Severus II</li>
+                            <li><strong>AD 306 – 312</strong> Reign of Maxentius</li>
+                            <li><strong>AD 307 – 308</strong> Reign of Maximian (returned)</li>
+                            <li><strong>AD 307 – 337</strong> Reign of Constantine I</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 324</div>
+                        <div class="content">Empire is reunited after Constantine defeats Licinius.<br><small class="text-muted">Renames Byzantium "New Rome"</small></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 330</div>
+                        <div class="content">Byzantium renamed to "Constantinople"</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 337 – 340</div>
+                        <div class="content">Reign of Constantine II</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 337 – 350</div>
+                        <div class="content">Reign of Constans I</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 337 – 361</div>
+                        <div class="content">Reign of Constantius II</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 360 – 363</div>
+                        <div class="content">Reign of Julian</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 363 – 364</div>
+                        <div class="content">Reign of Jovian</div>
+                    </div>
+                </div>
+
+                <!-- IMAGE 4 CONTENT -->
+                <div class="timeline-info-node">
+                    <div class="info-card">After Jovian's death, the empire splits again</div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <div class="split-header">Eastern Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 364 – 378</strong> Reign of Valens</li>
+                            <li><strong>AD 379 – 395</strong> Reign of Theodosius I</li>
+                            <li><strong>AD 395 – 408</strong> Reign of Arcadius</li>
+                            <li><strong>AD 408 – 450</strong> Reign of Theodosius II</li>
+                            <li><strong>AD 450 – 457</strong> Reign of Marcian</li>
+                            <li><strong>AD 457 – 474</strong> Reign of Leo I</li>
+                            <li><strong>AD 474</strong> Reign of Leo II</li>
+                            <li><strong>AD 474 – 475</strong> Reign of Zeno</li>
+                            <li><strong>AD 475 – 476</strong> Reign of Basiliscus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="split-header">Western Empire</div>
+                        <ul class="reign-list">
+                            <li><strong>AD 364 – 375</strong> Reign of Valentinian</li>
+                            <li><strong>AD 367 – 383</strong> Reign of Gratian</li>
+                            <li><strong>AD 375 – 392</strong> Reign of Valentinian II</li>
+                            <li><strong>AD 392 – 394</strong> Reign of Eugenius</li>
+                            <li><strong>AD 395 – 423</strong> Reign of Honorius</li>
+                            <li><strong>AD 423 – 425</strong> Reign of John</li>
+                            <li><strong>AD 425 – 455</strong> Reign of Valentinian III</li>
+                            <li><strong>AD 455</strong> Reign of Petronius Maximus</li>
+                            <li><strong>AD 455 – 456</strong> Reign of Avitus</li>
+                            <li><strong>AD 457 – 461</strong> Reign of Majorian</li>
+                            <li><strong>AD 461 – 465</strong> Reign of Severus III</li>
+                            <li><strong>AD 467 – 472</strong> Reign of Anthemius</li>
+                            <li><strong>AD 472</strong> Reign of Olybrius</li>
+                            <li><strong>AD 473 – 474</strong> Reign of Glycerius</li>
+                            <li><strong>AD 474 – 475</strong> Reign of Julius Nepos</li>
+                            <li><strong>AD 475 – 476</strong> Reign of Romulus Augustus</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 476</div>
+                        <div class="content">
+                            Germanic barbarian king Odoacer conquers Rome and deposes Romulus Augustus.<br><br>
+                            <strong>End of western empire.</strong><br>
+                            Imperial insignia sent to the Eastern Roman Empire.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 476 – 491</div>
+                        <div class="content">Reign of Zeno (in Eastern Byzantine Empire)</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left blue-node">
+                    <div class="timeline-card">
+                        <div class="date">AD 1453</div>
+                        <div class="content">Fall of Constantinople to Mohammed the Conqueror. Death of Constantine XI.</div>
+                    </div>
+                </div>
+
             </div>
-        </div>
+        </section>
+        <!-- ==================== TIMELINE SECTION END ==================== -->
+
     </main>
 
-    <footer class="text-center py-4 mt-5"><div class="container"><p class="mb-0 text-white">&copy; 2026 History of Rome Educational Project.</p></div></footer>
+    
+    <footer class="text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 History of Rome Educational Project. Built with Bootstrap 5.</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
