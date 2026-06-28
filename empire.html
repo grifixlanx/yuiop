@@ -10,33 +10,365 @@
 <body>
 
        <nav class="navbar navbar-expand-lg navbar-roman sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                   <li class="nav-item"><a class="nav-link" href="about.html">About Romans</a></li>
-                    <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
-                    <li class="nav-item"><a class="nav-link" href="republic.html">The Republic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="empire.html">The Empire</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Become a Member
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <!-- ================= HOME ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Home page -->
+
+                        <a class="nav-link pe-1"
+                           href="index.html">
+                            Home
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
-        <li><a class="dropdown-menu-item dropdown-item" href="signup.html">Sign Up</a></li>
-        <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
-    </ul>
+
+                        <!-- Arrow opens dropdown -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="homeDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Home Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#history">
+                                    History of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#founding">
+                                    Founding of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#kingdom">
+                                    Roman Kingdom
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#republic-overview">
+                                    Roman Republic
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#empire-overview">
+                                    Roman Empire
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </div>
-                </ul>
-            </div>
+
+                </li>
+
+                <!-- ================= ABOUT ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to About page -->
+
+                        <a class="nav-link pe-1"
+                           href="about.html">
+                            About Romans
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="aboutDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle About Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#society">
+                                    Roman Society
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#family">
+                                    Family Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#dailylife">
+                                    Daily Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#religion">
+                                    Religion
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#education">
+                                    Education
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#military">
+                                    Roman Military
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>                <!-- ================= REPUBLIC ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Republic page -->
+
+                        <a class="nav-link pe-1"
+                           href="republic.html">
+                            The Republic
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="republicDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Republic Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="republic.html#foundation">Foundation</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#conflict">Conflict of the Orders</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#punicwars">Punic Wars</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#expansion">Expansion</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#caesar">Julius Caesar</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#fall">Fall of the Republic</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= EMPIRE ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Empire page -->
+
+                        <a class="nav-link pe-1"
+                           href="empire.html">
+                            The Empire
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="empireDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Empire Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="empire.html#rise">Rise of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#augustus">Augustus</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#paxromana">Pax Romana</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#army">Roman Army</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#emperors">Famous Emperors</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#christianity">Christianity</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#decline">Decline of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= PERIODS ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="periods.html">
+                        Periods of Rome
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= CONTACT ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="contact.html">
+                        Contact
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= MEMBERSHIP ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="memberDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+
+                        Become a Member
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="signup.html">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="membership.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
         </div>
-    </nav>
+
+    </div>
+
+</nav>
     <header class="text-white text-center py-5" style="background: linear-gradient(rgba(139, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?q=80&w=1200') center/cover no-repeat; border-bottom: 4px solid #D4AF37;">
         <div class="container py-4">
             <h1 class="display-5 fw-bold text-uppercase" style="font-family: 'Cinzel', serif; letter-spacing: 2px;">The Roman Empire</h1>
@@ -45,24 +377,1298 @@
     </header>
     
 
-    <main class="container my-5">
-        <h1 class="mb-4 fw-bold" style="color: #8B0000;">The Roman Empire</h1>
-        
-        <div class="wiki-content border-start border-4 border-warning ps-4">
-            <p>The Roman Empire formally began in 27 BC when the Senate granted Octavian the title of "Augustus," effectively making him the first Roman Emperor. This marked the beginning of the <em>Pax Romana</em> (Roman Peace), a two-hundred-year period of unprecedented stability, architectural triumph, and economic prosperity.</p>
-            
-            <p>During its peak under Emperor Trajan in 117 AD, the Empire stretched from the rainy borders of Northern Britain to the sun-baked deserts of Egypt, encompassing over 20% of the world's population.</p>
-            
-            <ul>
-                <li><strong>Imperial Architecture:</strong> This era saw the construction of iconic megastructures, including the Colosseum, the Pantheon, and extensive aqueduct networks that supplied millions of gallons of water daily.</li>
-                <li><strong>The Crisis of the Third Century:</strong> Between 235 and 284 AD, the empire nearly collapsed under the combined pressures of barbarian invasions, plague, hyperinflation, and a revolving door of military emperors.</li>
-                <li><strong>The Division:</strong> To make the vast territory manageable, Emperor Diocletian divided the empire into Western and Eastern halves. Emperor Constantine later established a new eastern capital at Constantinople.</li>
-            </ul>
+   <main class="container my-5">
 
-            <p>While the Eastern Roman (Byzantine) Empire would survive for another thousand years, the Western Roman Empire suffered severe political decay and military defeats. It traditionally "fell" in 476 AD when the Germanic king Odoacer deposed the last western emperor, Romulus Augustulus.</p>
-        </div>
-    </main>
+<h1 class="display-5 fw-bold mb-4" style="color:#8B0000;">
+The Roman Empire
+</h1>
 
+<p >
+The Roman Empire was one of the largest, longest-lasting, and most influential civilizations in world history. It officially began in <strong>27 BC</strong>, when Octavian received the title <strong>Augustus</strong> from the Roman Senate, ending the Roman Republic and becoming Rome's first emperor. Over the next five centuries, the empire expanded across Europe, North Africa, and Western Asia, governing millions of people from diverse cultures, languages, and religions.
+</p>
+
+<p>
+Building upon the foundations established during the Republic, the Roman Empire created a vast political system supported by professional armies, efficient administration, extensive road networks, monumental architecture, and a thriving economy. Roman influence spread through trade, law, engineering, literature, and military organization, leaving a legacy that continues to shape the modern world.
+</p>
+
+<p>
+At its greatest territorial extent under Emperor <strong>Trajan</strong> in <strong>AD 117</strong>, the empire stretched from Britain in the northwest to Mesopotamia in the east, and from the Rhine and Danube frontiers to the deserts of North Africa. This enormous territory united people from many cultures under Roman rule while encouraging commerce, communication, and cultural exchange throughout the Mediterranean region.
+</p>
+
+
+
+
+<h2 class="mb-4">The Rise of the Roman Empire</h2>
+
+<p>
+The Roman Empire emerged from decades of political conflict and civil war that marked the final years of the Republic. Following the assassination of Julius Caesar in 44 BC, rival leaders competed for control of Rome. Caesar's adopted heir, <strong>Octavian</strong>, eventually defeated his opponents, including Mark Antony and Cleopatra VII of Egypt, at the <strong>Battle of Actium</strong> in 31 BC.
+</p>
+
+<p>
+In <strong>27 BC</strong>, the Senate granted Octavian the honorary title <strong>Augustus</strong>, meaning "the revered one." Although republican institutions such as the Senate continued to exist, Augustus held supreme authority over the military, finances, and provincial administration. Historians traditionally consider this moment the beginning of the Roman Empire.
+</p>
+
+<p>
+Augustus carefully presented himself not as a king but as the "First Citizen" (<em>Princeps</em>). His leadership restored political stability after years of conflict and established an imperial system that endured for centuries.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Statue of Augustus.jpg"
+class="card-img-top"
+alt="Statue of Augustus">
+
+<div class="card-body">
+
+<h5>Figure 1. Augustus, First Emperor of Rome</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Statue of Augustus of Prima Porta.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Augustus Prima Porta Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="augustus">
+
+<h2 class="mb-4">Augustus and the Beginning of a New Era</h2>
+
+<p>
+Augustus ruled from <strong>27 BC to AD 14</strong> and transformed Rome from a republic divided by civil war into a stable empire. He reorganized the army into a permanent professional force, improved tax collection, strengthened provincial administration, and launched extensive building projects throughout Rome.
+</p>
+
+<p>
+One of Augustus' most famous achievements was establishing a long period of peace and prosperity known as the <strong>Pax Romana</strong>, or "Roman Peace." Although wars continued along the empire's frontiers, the Mediterranean experienced remarkable internal stability that encouraged trade, economic growth, and cultural development.
+</p>
+
+<p>
+Augustus famously declared that he had "found Rome a city of brick and left it a city of marble," highlighting the many temples, monuments, forums, and public buildings constructed during his reign.
+</p>
+
+<div class="alert alert-success">
+
+<h5>Key Achievements of Augustus</h5>
+
+<ul class="mb-0">
+
+<li>Established the Roman Empire.</li>
+
+<li>Created a professional standing army.</li>
+
+<li>Improved taxation and government administration.</li>
+
+<li>Expanded roads and public infrastructure.</li>
+
+<li>Began the Pax Romana.</li>
+
+<li>Encouraged literature, architecture, and the arts.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="government">
+
+<h2 class="mb-4">Government and Administration</h2>
+
+<p>
+Managing such a vast empire required an efficient administrative system. The emperor served as the supreme political and military leader, while governors administered the provinces on Rome's behalf. Local communities often retained their own traditions and institutions, provided they remained loyal to Rome and paid taxes.
+</p>
+
+<p>
+The empire depended upon thousands of officials responsible for collecting taxes, maintaining public order, supervising construction projects, administering justice, and ensuring communication between distant provinces and the capital.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Responsibilities of the Emperor</h4>
+
+<ul>
+
+<li>Commander of the army</li>
+
+<li>Head of government</li>
+
+<li>Chief lawmaker</li>
+
+<li>Foreign policy</li>
+
+<li>Religious leadership</li>
+
+<li>Provincial oversight</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Provincial Administration</h4>
+
+<ul>
+
+<li>Governors administered provinces.</li>
+
+<li>Taxes funded the empire.</li>
+
+<li>Roads connected major cities.</li>
+
+<li>Roman law maintained order.</li>
+
+<li>Military units defended frontiers.</li>
+
+<li>Local officials assisted governors.</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="paxromana">
+
+<h2 class="mb-4">The Pax Romana</h2>
+
+<p>
+One of the defining periods of the Roman Empire was the <strong>Pax Romana</strong>, meaning "Roman Peace." Lasting for approximately two centuries, from <strong>27 BC to AD 180</strong>, this era began under Augustus and continued through the reign of Emperor Marcus Aurelius. Although Rome continued to defend its frontiers and conduct military campaigns, much of the empire experienced remarkable internal peace, political stability, and economic prosperity.
+</p>
+
+<p>
+The Pax Romana encouraged trade, population growth, urban development, and cultural exchange. Merchants travelled safely across Roman roads and sea routes, carrying goods such as grain, olive oil, wine, silk, spices, glassware, and precious metals. Cities flourished as centres of commerce, education, and government, while monumental construction projects transformed the appearance of the empire.
+</p>
+
+<p>
+This period also witnessed significant advances in literature, engineering, architecture, medicine, and law. Many of the public buildings and monuments that survive today—including amphitheatres, aqueducts, bridges, and temples—were either built or expanded during the Pax Romana.
+</p>
+
+<div class="alert alert-success">
+
+<h5>Highlights of the Pax Romana</h5>
+
+<ul class="mb-0">
+
+<li>Long period of political stability.</li>
+
+<li>Expansion of trade throughout the Mediterranean.</li>
+
+<li>Construction of roads, aqueducts, and public buildings.</li>
+
+<li>Growth of cities and commerce.</li>
+
+<li>Development of Roman law and administration.</li>
+
+<li>Flourishing of literature, art, and architecture.</li>
+
+</ul>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman road.jpg"
+class="card-img-top"
+alt="Roman road">
+
+<div class="card-body">
+
+<h5>Figure 2. Roman Roads</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+A preserved Roman road demonstrating Roman engineering.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Ancient Roman road Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="economy">
+
+<h2 class="mb-4">Trade and the Roman Economy</h2>
+
+<p>
+The Roman Empire possessed one of the largest economies of the ancient world. Trade connected provinces across Europe, North Africa, and Asia, allowing goods, people, and ideas to move efficiently throughout the empire. The Mediterranean Sea became known as <strong>Mare Nostrum</strong>, meaning "Our Sea," because Roman naval power made maritime trade relatively secure.
+</p>
+
+<p>
+Merchants transported agricultural products, luxury goods, metals, pottery, marble, textiles, spices, perfumes, and exotic animals. Rome imported silk from China through intermediary traders, spices from India, papyrus from Egypt, and valuable metals from Spain and Britain.
+</p>
+
+<p>
+Roman coins were widely accepted throughout the empire, making commerce easier and encouraging economic growth. Ports, warehouses, roads, and bridges formed an extensive infrastructure that supported both trade and military movement.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Major Imports</h4>
+
+<ul>
+
+<li>Silk</li>
+
+<li>Spices</li>
+
+<li>Ivory</li>
+
+<li>Papyrus</li>
+
+<li>Precious stones</li>
+
+<li>Perfumes</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Major Exports</h4>
+
+<ul>
+
+<li>Wine</li>
+
+<li>Olive oil</li>
+
+<li>Glassware</li>
+
+<li>Pottery</li>
+
+<li>Metal products</li>
+
+<li>Weapons</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Ancient Roman harbour.jpg"
+class="card-img-top"
+alt="Ancient Roman harbour">
+
+<div class="card-body">
+
+<h5>Figure 3. A Roman Port</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Reconstruction or archaeological remains of Portus or Ostia.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Portus ancient Rome Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="engineering">
+
+<h2 class="mb-4">Engineering and Architecture</h2>
+
+<p>
+Roman engineers transformed the ancient world through innovative construction techniques and practical design. Their buildings combined strength, durability, and beauty, many surviving for nearly two thousand years. The use of <strong>Roman concrete</strong>, arches, vaults, and domes enabled architects to construct larger and more complex structures than many earlier civilizations.
+</p>
+
+<p>
+Public buildings reflected the power and prestige of the empire. Amphitheatres hosted entertainment, baths promoted hygiene and social interaction, aqueducts supplied fresh water, while bridges and roads connected distant regions. Roman engineering greatly improved daily life and strengthened imperial administration.
+</p>
+
+<div class="table-responsive shadow-sm my-4">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Structure</th>
+
+<th>Purpose</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Aqueducts</td>
+
+<td>Transported fresh water into cities.</td>
+
+</tr>
+
+<tr>
+
+<td>Roads</td>
+
+<td>Improved travel, trade, and military movement.</td>
+
+</tr>
+
+<tr>
+
+<td>Bridges</td>
+
+<td>Connected settlements across rivers.</td>
+
+</tr>
+
+<tr>
+
+<td>Amphitheatres</td>
+
+<td>Hosted gladiatorial games and public events.</td>
+
+</tr>
+
+<tr>
+
+<td>Baths</td>
+
+<td>Provided public bathing and social spaces.</td>
+
+</tr>
+
+<tr>
+
+<td>Forums</td>
+
+<td>Served as political, commercial, and religious centres.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/pantheon.jpg"
+class="card-img-top"
+alt="Pantheon">
+
+<div class="card-body">
+
+<h5>Figure 4. The Pantheon</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Exterior photograph of the Pantheon in Rome.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Pantheon Rome Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman aqueduct.jpg"
+class="card-img-top"
+alt="Roman aqueduct">
+
+<div class="card-body">
+
+<h5>Figure 5. Roman Aqueduct</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Pont du Gard or another preserved Roman aqueduct.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Pont du Gard Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="army">
+
+<h2 class="mb-4">The Roman Army</h2>
+
+<p>
+The Roman army was the foundation of the Empire's strength. Its discipline, organization, engineering skills, and professional training enabled Rome to defend its borders and maintain control over territories stretching across three continents. Unlike the citizen armies of the early Republic, the imperial army consisted largely of long-serving professional soldiers who dedicated many years of their lives to military service.
+</p>
+
+<p>
+The principal fighting force was the <strong>Roman legion</strong>, normally composed of around 5,000 heavily armed infantry soldiers. Supporting the legions were auxiliary units recruited from throughout the Empire. These auxiliaries supplied cavalry, archers, engineers, and other specialist troops while introducing valuable local military experience.
+</p>
+
+<p>
+Roman soldiers were responsible for much more than fighting battles. They built roads, bridges, forts, defensive walls, aqueducts, and military camps. Many of these structures remained in use long after the Empire had disappeared.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Standard Equipment</h4>
+
+<ul>
+
+<li>Gladius (short sword)</li>
+
+<li>Pilum (throwing spear)</li>
+
+<li>Scutum (shield)</li>
+
+<li>Helmet</li>
+
+<li>Body armour</li>
+
+<li>Military sandals (Caligae)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Military Duties</h4>
+
+<ul>
+
+<li>Defending frontiers</li>
+
+<li>Building roads</li>
+
+<li>Constructing forts</li>
+
+<li>Protecting trade routes</li>
+
+<li>Maintaining order</li>
+
+<li>Expanding the Empire</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman legionaries.jpg"
+class="card-img-top"
+alt="Roman legionaries">
+
+<div class="card-body">
+
+<h5>Figure 6. Roman Legionaries</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical reconstruction of Roman legionaries in full equipment.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman legion reenactment Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="emperors">
+
+<h2 class="mb-4">Famous Roman Emperors</h2>
+
+<p>
+Throughout its history, the Roman Empire was ruled by emperors whose leadership greatly influenced its development. Some expanded the Empire, others strengthened its administration, while a few guided Rome through periods of crisis and transformation.
+</p>
+
+<div class="table-responsive shadow-sm">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Emperor</th>
+
+<th>Reign</th>
+
+<th>Historical Significance</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td><strong>Augustus</strong></td>
+
+<td>27 BC – AD 14</td>
+
+<td>First Roman Emperor; established the Empire and began the Pax Romana.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Trajan</strong></td>
+
+<td>AD 98 – 117</td>
+
+<td>Expanded the Empire to its greatest territorial extent.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Hadrian</strong></td>
+
+<td>AD 117 – 138</td>
+
+<td>Strengthened the frontiers and built Hadrian's Wall in Britain.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Marcus Aurelius</strong></td>
+
+<td>AD 161 – 180</td>
+
+<td>Known as the "Philosopher Emperor" and author of <em>Meditations</em>.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Constantine I</strong></td>
+
+<td>AD 306 – 337</td>
+
+<td>Legalized Christianity and founded Constantinople.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Hadrian's Wall.jpg"
+class="card-img-top"
+alt="Hadrian's Wall">
+
+<div class="card-body">
+
+<h5>Figure 7. Hadrian's Wall</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Photograph of Hadrian's Wall in northern England.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Hadrian's Wall Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="christianity">
+
+<h2 class="mb-4">Christianity in the Roman Empire</h2>
+
+<p>
+Christianity emerged during the early Roman Empire in the province of Judea. At first, Christians formed a small religious community and were sometimes persecuted because they refused to participate in certain traditional Roman religious practices. Over time, however, Christianity spread throughout the Empire despite periods of persecution.
+</p>
+
+<p>
+A major turning point occurred under Emperor <strong>Constantine I</strong>. In <strong>AD 313</strong>, Constantine and Licinius issued the <strong>Edict of Milan</strong>, granting religious tolerance and allowing Christians to worship openly. Constantine later supported the construction of churches and played an important role in the development of Christianity within the Empire.
+</p>
+
+<p>
+By the end of the fourth century, Christianity had become the Empire's official religion under Emperor <strong>Theodosius I</strong>. The growth of Christianity would continue to influence European history long after the fall of the Western Roman Empire.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Emperor Constantine.jpg"
+class="card-img-top"
+alt="Emperor Constantine">
+
+<div class="card-body">
+
+<h5>Figure 8. Emperor Constantine the Great</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Bust or statue of Constantine the Great.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Constantine the Great statue Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="crisis">
+
+<h2 class="mb-4">The Crisis of the Third Century</h2>
+
+<p>
+Between <strong>AD 235 and AD 284</strong>, the Roman Empire experienced one of the most difficult periods in its history. Known as the <strong>Crisis of the Third Century</strong>, this era was marked by political instability, frequent changes of emperor, economic difficulties, civil wars, foreign invasions, and outbreaks of disease.
+</p>
+
+<p>
+More than twenty emperors ruled during this fifty-year period, many coming to power through military support and losing power through assassination or rebellion. Inflation weakened the economy, trade declined in many regions, and frontier defenses came under increasing pressure from external enemies.
+</p>
+
+<p>
+Despite these challenges, the Empire survived through military reforms and administrative changes introduced by later emperors, particularly <strong>Diocletian</strong>, whose reforms restored greater stability.
+</p>
+
+<div class="alert alert-warning">
+
+<h5>Historical Importance</h5>
+
+<p class="mb-0">
+The Crisis of the Third Century demonstrated how difficult it had become to govern such a vast empire. The reforms that followed reshaped Roman administration and prepared the Empire for its next stage of development.
+</p>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="decline">
+
+<h2 class="mb-4">The Division and Decline of the Roman Empire</h2>
+
+<p>
+By the late third century AD, the Roman Empire had become too vast for a single ruler to govern effectively. Its enormous territory stretched thousands of kilometres across Europe, North Africa, and Western Asia, making communication, defence, and administration increasingly difficult. Frequent invasions, civil wars, economic problems, and political instability further weakened imperial authority.
+</p>
+
+<p>
+In <strong>AD 285</strong>, Emperor <strong>Diocletian</strong> reorganized the Empire by dividing its administration between eastern and western regions. Although intended to improve efficiency, this marked the beginning of a permanent political separation. Each half developed its own government while continuing to cooperate in defending the Empire.
+</p>
+
+<p>
+A few decades later, Emperor <strong>Constantine the Great</strong> founded a new capital at <strong>Constantinople</strong> (modern-day Istanbul) in <strong>AD 330</strong>. Located on the Bosporus Strait, the city became the political and economic centre of the Eastern Roman Empire.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Western Roman Empire</h4>
+
+<ul>
+
+<li>Capital: Rome (later Ravenna)</li>
+
+<li>Faced repeated invasions</li>
+
+<li>Political instability</li>
+
+<li>Economic decline</li>
+
+<li>Ended in AD 476</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Eastern Roman Empire</h4>
+
+<ul>
+
+<li>Capital: Constantinople</li>
+
+<li>Stronger economy</li>
+
+<li>Continued Roman traditions</li>
+
+<li>Known later as the Byzantine Empire</li>
+
+<li>Survived until AD 1453</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Ancient Constantinople.jpg"
+class="card-img-top"
+alt="Ancient Constantinople">
+
+<div class="card-body">
+
+<h5>Figure 9. Constantinople</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical reconstruction or aerial illustration of ancient Constantinople.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Constantinople reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="fall">
+
+<h2 class="mb-4">The Fall of the Western Roman Empire</h2>
+
+<p>
+During the fifth century AD, the Western Roman Empire faced increasing pressure from migrating peoples and invading groups, including the Visigoths, Vandals, and Ostrogoths. Political instability, economic challenges, and military difficulties reduced the Empire's ability to defend its frontiers effectively.
+</p>
+
+<p>
+A symbolic milestone occurred in <strong>AD 476</strong>, when the Germanic leader <strong>Odoacer</strong> deposed the young emperor <strong>Romulus Augustulus</strong>. Historians traditionally regard this event as marking the end of the Western Roman Empire, although Roman institutions and culture continued to influence Europe for centuries afterward.
+</p>
+
+<p>
+The Eastern Roman Empire, centred in Constantinople, continued to preserve Roman law, administration, and culture for nearly one thousand more years before its capital fell to the Ottoman Empire in <strong>AD 1453</strong>.
+</p>
+
+<div class="alert alert-danger">
+
+<h5>Historical Significance</h5>
+
+<p class="mb-0">
+
+The fall of the Western Roman Empire did not mark the end of Roman civilization. Roman law, language, engineering, architecture, religion, and political ideas continued to shape medieval Europe and remain influential throughout the modern world.
+
+</p>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="timeline">
+
+<h2 class="mb-4">Timeline of the Roman Empire</h2>
+
+<div class="table-responsive shadow-sm">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Year</th>
+
+<th>Historical Event</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>27 BC</td>
+
+<td>Augustus becomes the first Roman Emperor.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 43</td>
+
+<td>Roman conquest of Britain begins.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 80</td>
+
+<td>The Colosseum is completed.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 98–117</td>
+
+<td>Reign of Emperor Trajan; Empire reaches its greatest extent.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 117–138</td>
+
+<td>Hadrian strengthens the Empire's frontiers.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 161–180</td>
+
+<td>Marcus Aurelius rules during the final years of the Pax Romana.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 235–284</td>
+
+<td>Crisis of the Third Century.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 313</td>
+
+<td>Edict of Milan grants religious tolerance.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 330</td>
+
+<td>Constantinople becomes the new imperial capital.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 395</td>
+
+<td>The Empire is permanently divided into East and West.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 476</td>
+
+<td>End of the Western Roman Empire.</td>
+
+</tr>
+
+<tr>
+
+<td>AD 1453</td>
+
+<td>Fall of Constantinople and the end of the Byzantine Empire.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="legacy">
+
+<h2 class="mb-4">The Legacy of the Roman Empire</h2>
+
+<p>
+The Roman Empire remains one of history's most influential civilizations. Its achievements in government, engineering, architecture, military organization, law, literature, and urban planning helped shape the development of Europe and many other parts of the world. Roman ideas continue to influence modern legal systems, political institutions, languages, and public infrastructure.
+</p>
+
+<p>
+Monuments such as the Colosseum, the Pantheon, Hadrian's Wall, and countless roads, bridges, and aqueducts stand as lasting reminders of Roman engineering and architectural skill. Archaeological discoveries continue to provide new insights into Roman society, allowing historians to better understand the daily lives of millions of people who lived within the Empire.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body text-center">
+
+<h5>Law</h5>
+
+<p>Roman legal principles continue to influence modern civil law systems.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body text-center">
+
+<h5>Engineering</h5>
+
+<p>Roads, bridges, aqueducts, and concrete transformed construction.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body text-center">
+
+<h5>Language</h5>
+
+<p>Latin became the foundation of the Romance languages.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body text-center">
+
+<h5>Government</h5>
+
+<p>Roman political ideas influenced later constitutional systems.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="gallery">
+
+<h2 class="mb-4">Historical Gallery</h2>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="card shadow-sm">
+
+<img src="images/Colosseum.jpg" class="card-img-top" alt="Colosseum">
+
+<div class="card-body">
+
+<h6>Colosseum</h6>
+
+<p>Search: Colosseum Rome Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm">
+
+<img src="images/pantheon.jpg" class="card-img-top" alt="Pantheon">
+
+<div class="card-body">
+
+<h6>Pantheon</h6>
+
+<p>Search: Pantheon Rome Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm">
+
+<img src="images/Hadrian's Wall.jpg" class="card-img-top" alt="Hadrian's Wall">
+
+<div class="card-body">
+
+<h6>Hadrian's Wall</h6>
+
+<p>Search: Hadrian's Wall Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card shadow-sm">
+
+<img src="images/Ancient Constantinople.jpg" class="card-img-top" alt="Constantinople">
+
+<div class="card-body">
+
+<h6>Constantinople</h6>
+
+<p>Search: Constantinople reconstruction Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="conclusion">
+
+<div class="text-center">
+
+<h2 class="mb-4">Conclusion</h2>
+
+<p class="lead">
+From a small settlement on the banks of the River Tiber, Rome grew into one of the greatest empires the world has ever known. Its history spans legendary kings, a powerful republic, centuries of imperial rule, and a legacy that continues to influence modern civilization. The story of Rome is not only the history of an ancient state but also the story of ideas, innovations, and institutions that have shaped the modern world.
+</p>
+
+<a href="index.html" class="btn btn-dark btn-lg me-3">
+← Return to Home
+</a>
+
+<a href="about.html" class="btn btn-outline-dark btn-lg">
+Learn About the Romans
+</a>
+
+</div>
+
+</section>
+
+</main>
     <footer class="text-center py-4 mt-5 bg-dark text-white">
         <div class="container">
             <p class="mb-0">&copy; 2026 History of Rome Educational Project.</p>
