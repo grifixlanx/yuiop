@@ -10,33 +10,365 @@
 <body>
 
        <nav class="navbar navbar-expand-lg navbar-roman sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                   <li class="nav-item"><a class="nav-link" href="about.html">About Romans</a></li>
-                    <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
-                    <li class="nav-item"><a class="nav-link" href="republic.html">The Republic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="empire.html">The Empire</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Become a Member
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <!-- ================= HOME ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Home page -->
+
+                        <a class="nav-link pe-1"
+                           href="index.html">
+                            Home
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
-        <li><a class="dropdown-menu-item dropdown-item" href="signup.html">Sign Up</a></li>
-        <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
-    </ul>
+
+                        <!-- Arrow opens dropdown -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="homeDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Home Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#history">
+                                    History of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#founding">
+                                    Founding of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#kingdom">
+                                    Roman Kingdom
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#republic-overview">
+                                    Roman Republic
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#empire-overview">
+                                    Roman Empire
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </div>
-                </ul>
-            </div>
+
+                </li>
+
+                <!-- ================= ABOUT ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to About page -->
+
+                        <a class="nav-link pe-1"
+                           href="about.html">
+                            About Romans
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="aboutDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle About Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#society">
+                                    Roman Society
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#family">
+                                    Family Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#dailylife">
+                                    Daily Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#religion">
+                                    Religion
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#education">
+                                    Education
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#military">
+                                    Roman Military
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>                <!-- ================= REPUBLIC ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Republic page -->
+
+                        <a class="nav-link pe-1"
+                           href="republic.html">
+                            The Republic
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="republicDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Republic Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="republic.html#foundation">Foundation</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#conflict">Conflict of the Orders</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#punicwars">Punic Wars</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#expansion">Expansion</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#caesar">Julius Caesar</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#fall">Fall of the Republic</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= EMPIRE ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Empire page -->
+
+                        <a class="nav-link pe-1"
+                           href="empire.html">
+                            The Empire
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="empireDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Empire Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="empire.html#rise">Rise of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#augustus">Augustus</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#paxromana">Pax Romana</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#army">Roman Army</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#emperors">Famous Emperors</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#christianity">Christianity</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#decline">Decline of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= PERIODS ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="periods.html">
+                        Periods of Rome
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= CONTACT ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="contact.html">
+                        Contact
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= MEMBERSHIP ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="memberDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+
+                        Become a Member
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="signup.html">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="membership.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
         </div>
-    </nav>
+
+    </div>
+
+</nav>
     <header class="text-white text-center py-5" style="background: linear-gradient(rgba(139, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=1200') center/cover no-repeat; border-bottom: 4px solid #D4AF37;">
     <div class="container py-4">
         <h1 class="display-5 fw-bold text-uppercase" style="font-family: 'Cinzel', serif; letter-spacing: 2px;">About the Romans</h1>
@@ -45,23 +377,900 @@
 </header>
    
 
-    <main class="container my-5">
-        <h1 class="mb-4 fw-bold" style="color: #8B0000;">Roman Society & Culture</h1>
-        
-        <div class="wiki-content border-start border-4 border-secondary ps-4">
-            <p>Life in ancient Rome revolved around the city of Rome, its famed seven hills, and its monumental architecture such as the Colosseum, the Forum of Trajan, and the Pantheon. Imperial Roman society was highly stratified, deeply shifting the dynamics of daily life between different social legal classes.</p>
-            
-            <p>The structure of Roman society determined everything from political power to dress codes and legal protections:</p>
-            <ul>
-                <li><strong>Patricians vs. Plebeians:</strong> Patricians were the wealthy, land-owning noble elite who held hereditary political power. Plebeians constituted the massive general body of free Roman citizens, working as farmers, artisans, and traders.</li>
-                <li><strong>Class Structure:</strong> Below the free citizens were freedmen (former slaves who had been legally emancipated) and a vast population of enslaved individuals who provided the core labor force for agriculture, mining, and domestic estates.</li>
-                <li><strong>The Family Unit:</strong> The head of the household was the <em>paterfamilias</em> (the oldest living male), who held absolute legal authority over his wife, children, and household slaves.</li>
-            </ul>
+  <main class="container my-5">
 
-            <p>Roman culture left an enduring legacy on the Western world. Their sophisticated legal codes formed the foundation for civil law systems globally, while Latin evolved into the modern Romance languages and shaped scientific, legal, and theological vocabulary for millennia.</p>
-        </div>
-    </main>
+<h1 class="display-5 fw-bold mb-4" style="color:#8B0000;">
+About the Romans
+</h1>
 
+<p >
+The Romans were among the most influential peoples of the ancient world. From humble beginnings in central Italy, they established a civilization that lasted for more than a thousand years and profoundly shaped the course of history. Roman achievements in government, law, architecture, engineering, language, and military organization laid many of the foundations of Western civilization. Their cities, roads, public buildings, and written works continue to inspire historians, archaeologists, and visitors from around the world.
+</p>
+
+<p>
+Roman civilization was not defined solely by its emperors or famous military victories. It was also built by ordinary citizens—farmers, merchants, soldiers, artisans, teachers, and families—whose daily lives formed the backbone of Roman society. Their customs, beliefs, traditions, and innovations created one of the most organized and successful civilizations of the ancient world.
+</p>
+
+
+
+<h2 class="mb-4">Origins of the Roman People</h2>
+
+<p>
+The Romans originated in the region of <strong>Latium</strong>, an area in central Italy where the city of Rome was established on the banks of the <strong>Tiber River</strong>. Archaeological discoveries indicate that small farming communities occupied the hills surrounding Rome long before the city became a powerful state. Over time, these settlements gradually united, creating the foundations of what would become one of history's greatest civilizations.
+</p>
+
+<p>
+According to Roman tradition, the city was founded in <strong>753 BC</strong> by <strong>Romulus</strong>, who, together with his twin brother <strong>Remus</strong>, was said to have been raised by a she-wolf after being abandoned as infants. Although historians regard this story as a legend rather than literal history, it became one of Rome's most enduring national myths and symbolized courage, determination, and divine favour.
+</p>
+
+<p>
+The early Romans were influenced by neighbouring peoples, particularly the <strong>Etruscans</strong> to the north and the <strong>Greeks</strong> in southern Italy. From these cultures they adopted ideas in architecture, engineering, writing, religion, and political organization while gradually developing customs and institutions that were distinctly Roman.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/The Capitoline Wolf with Romulus and Remus.jpg"
+class="card-img-top"
+alt="The Capitoline Wolf with Romulus and Remus">
+
+<div class="card-body">
+
+<h5>Figure 1. Romulus and Remus</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+The Capitoline Wolf sculpture showing Romulus and Remus.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Capitoline Wolf Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="society">
+
+<h2 class="mb-4">Roman Society</h2>
+
+<p>
+Roman society was carefully organized into different social classes, each with its own rights, responsibilities, and opportunities. Wealth, family background, citizenship, and political influence all affected an individual's position within society. Although movement between classes was possible in certain circumstances, social status often shaped a person's education, occupation, and participation in public life.
+</p>
+
+<p>
+At the top of society stood the <strong>patricians</strong>, members of wealthy aristocratic families who traditionally held significant political influence. Below them were the <strong>plebeians</strong>, who made up the majority of free Roman citizens. They included farmers, craftsmen, merchants, labourers, and soldiers who played a vital role in Rome's economic and military success.
+</p>
+
+<p>
+Another important group consisted of <strong>freedmen</strong>, former enslaved people who had gained their freedom. While they did not enjoy all the privileges of citizens immediately, many became successful traders and artisans. At the bottom of the social hierarchy were the <strong>enslaved</strong>, who worked in homes, farms, mines, workshops, and public construction projects. Slavery formed a significant part of the Roman economy, though the experiences of enslaved people varied widely depending on their work and circumstances.
+</p>
+
+<div class="row g-4 mt-2">
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Patricians</h4>
+
+<p>
+Members of Rome's noble families who traditionally occupied many of the highest political and religious offices. Their wealth often came from land ownership and public service.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Plebeians</h4>
+
+<p>
+The majority of Roman citizens. They worked in agriculture, trade, crafts, business, and the military, contributing greatly to Rome's growth and prosperity.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section>
+
+<hr class="my-5">
+
+<section id="family">
+
+<h2 class="mb-4">Family Life in Ancient Rome</h2>
+
+<p>
+The family formed the foundation of Roman society and was considered essential to maintaining order, tradition, and citizenship. Most Roman households were led by the <strong>paterfamilias</strong>, the oldest living male, who possessed legal authority over the family's property and important decisions. His responsibilities included managing the household, arranging marriages, educating children, and preserving the family's reputation within the community.
+</p>
+
+<p>
+Roman women played a central role in family life. Although they generally could not vote or hold political office, many managed household finances, supervised servants, raised children, and influenced family decisions. Wealthy women often oversaw large households, while women from less affluent families worked alongside their husbands in farming, trade, or small businesses.
+</p>
+
+<p>
+Children were highly valued because they ensured the continuation of the family. Boys were encouraged to prepare for careers in public service, politics, or the military, while girls were taught domestic responsibilities and skills needed to manage future households. Families celebrated important occasions such as births, marriages, and religious festivals together, strengthening family bonds across generations.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Illustration of a Roman family.jpg"
+class="card-img-top"
+alt="Illustration of a Roman family">
+
+<div class="card-body">
+
+<h5>Figure 2. A Roman Family</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+A reconstruction or artwork depicting a Roman household during the Imperial period.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman family reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="education">
+
+<h2 class="mb-4">Education and Learning</h2>
+
+<p>
+Education was highly valued in Roman society, particularly among wealthy families who believed that knowledge prepared young people for public life. While not every child attended school, those who did learned reading, writing, mathematics, and public speaking. Education helped prepare future administrators, lawyers, merchants, military officers, and political leaders.
+</p>
+
+<p>
+Young children often received instruction at home before attending schools operated by private teachers. As students advanced, they studied grammar, literature, history, philosophy, and rhetoric. Public speaking became especially important because success in politics and the courts depended on the ability to communicate clearly and persuade audiences.
+</p>
+
+<p>
+Greek culture greatly influenced Roman education. Many educated Romans learned both <strong>Latin</strong> and <strong>Greek</strong>, allowing them to study the works of famous Greek philosophers, historians, and poets. This blending of Roman and Greek traditions helped create one of the most sophisticated educational systems of the ancient world.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Subjects Studied</h4>
+
+<ul>
+
+<li>Reading and Writing</li>
+
+<li>Mathematics</li>
+
+<li>History</li>
+
+<li>Poetry</li>
+
+<li>Philosophy</li>
+
+<li>Public Speaking (Rhetoric)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Education Goals</h4>
+
+<ul>
+
+<li>Develop moral character</li>
+
+<li>Prepare for public service</li>
+
+<li>Train future leaders</li>
+
+<li>Strengthen communication skills</li>
+
+<li>Understand Roman traditions</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="religion">
+
+<h2 class="mb-4">Religion and Beliefs</h2>
+
+<p>
+Religion influenced nearly every aspect of Roman life. The Romans believed that maintaining good relationships with the gods helped ensure prosperity, military success, and political stability. Religious ceremonies accompanied public festivals, state events, military campaigns, and important family occasions.
+</p>
+
+<p>
+Before the spread of Christianity, Romans worshipped many gods and goddesses, including <strong>Jupiter</strong>, king of the gods; <strong>Juno</strong>, protector of women and marriage; <strong>Mars</strong>, the god of war; <strong>Minerva</strong>, goddess of wisdom; <strong>Venus</strong>, goddess of love; and <strong>Neptune</strong>, god of the sea. Temples dedicated to these deities were important centers of religious life throughout the empire.
+</p>
+
+<p>
+As Rome expanded, it incorporated religious traditions from conquered peoples. During the fourth century AD, Christianity spread rapidly throughout the empire. After Emperor <strong>Constantine the Great</strong> legalized Christianity in <strong>AD 313</strong> through the Edict of Milan, the religion gradually became dominant across the Roman world.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Interior of the Pantheon in Rome.jpg"
+class="card-img-top"
+alt="Interior of the Pantheon in Rome">
+
+<div class="card-body">
+
+<h5>Figure 3. The Pantheon</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Interior photograph of the Pantheon showing its famous dome.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Pantheon interior Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+<div class="alert alert-warning mt-4">
+
+<h5>Did You Know?</h5>
+
+<p class="mb-0">
+The names of several planets in our Solar System—including <strong>Mars</strong>,
+<strong>Jupiter</strong>, <strong>Mercury</strong>, <strong>Venus</strong>, and
+<strong>Saturn</strong>—are derived from Roman gods and goddesses, reflecting the lasting influence of Roman mythology.
+</p>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="clothing">
+
+<h2 class="mb-4">Roman Clothing and Appearance</h2>
+
+<p>
+Clothing in Ancient Rome reflected a person's social status, occupation, wealth, gender, and even citizenship. While clothing served the practical purpose of protection from the weather, it was also an important symbol of identity. The style, colour, and quality of garments often indicated whether a person belonged to the upper classes, the military, or ordinary society.
+</p>
+
+<p>
+One of the most recognizable garments was the <strong>toga</strong>, a large semicircular woollen cloth worn almost exclusively by male Roman citizens during official ceremonies and public occasions. Wearing a toga represented citizenship and participation in Roman civic life. Although impressive in appearance, it was heavy and difficult to wear, making it unsuitable for everyday work.
+</p>
+
+<p>
+Most Romans wore a <strong>tunic</strong> as their daily clothing. Tunics were simple garments made from wool or linen and were worn by both men and women. Wealthier citizens could afford finer fabrics, decorative borders, colourful dyes, and expensive jewellery, while ordinary citizens generally wore simpler clothing suited to their occupations.
+</p>
+
+<p>
+Women commonly wore the <strong>stola</strong>, a long flowing dress worn over a tunic, often accompanied by a cloak known as the <strong>palla</strong>. Hairstyles were also important, particularly among wealthy Roman women, who sometimes employed servants to create elaborate braids and curls.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<div class="col-md-5">
+<img src="images/Illustration of Roman clothing.jpg"
+class="card-img-top"
+alt="Illustration of Roman clothing">
+  </div>
+  <div class="col-md-7">
+
+<h5>Figure 4. Roman Clothing</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Illustration or museum reconstruction showing a Roman toga, tunic, and stola.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman clothing reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="food">
+
+<h2 class="mb-4">Food and Dining</h2>
+
+<p>
+Food was an essential part of Roman daily life and varied according to wealth, location, and occupation. Most ordinary Romans relied on bread, vegetables, legumes, olive oil, cheese, and seasonal fruits. Wheat formed the basis of many meals and was often made into bread or porridge.
+</p>
+
+<p>
+The Mediterranean climate allowed Romans to cultivate olives, grapes, figs, and numerous vegetables. Fish and seafood were common in coastal areas, while meat was generally reserved for festivals or wealthier households. Wine accompanied many meals, although it was usually diluted with water before drinking.
+</p>
+
+<p>
+Wealthy Romans hosted elaborate banquets that featured multiple courses, imported spices, seafood, game, fruits, and desserts. Such gatherings demonstrated both hospitality and social status. Guests often reclined on couches while servants presented carefully prepared dishes throughout the evening.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Common Foods</h4>
+
+<ul>
+
+<li>Bread</li>
+
+<li>Olives</li>
+
+<li>Cheese</li>
+
+<li>Beans and Lentils</li>
+
+<li>Fish</li>
+
+<li>Fruits</li>
+
+<li>Vegetables</li>
+
+<li>Wine</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Luxury Foods</h4>
+
+<ul>
+
+<li>Imported spices</li>
+
+<li>Oysters</li>
+
+<li>Roasted meats</li>
+
+<li>Exotic fruits</li>
+
+<li>Honey desserts</li>
+
+<li>Rare wines</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman banquet reconstruction.jpg"
+class="card-img-top"
+alt="Roman banquet reconstruction">
+
+<div class="card-body">
+
+<h5>Figure 5. Roman Banquet</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Painting or reconstruction of a Roman dining room during a banquet.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman banquet reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="architecture">
+
+<h2 class="mb-4">Roman Homes and Architecture</h2>
+
+<p>
+Roman architecture remains one of the civilization's greatest achievements. Combining practicality with impressive design, Roman builders developed techniques that allowed them to construct monumental public buildings, bridges, aqueducts, roads, temples, baths, theatres, and amphitheatres that have survived for centuries.
+</p>
+
+<p>
+Most wealthy Romans lived in elegant town houses known as <strong>domus</strong>. These homes were often built around an open courtyard called an <strong>atrium</strong>, which admitted sunlight and collected rainwater. Larger houses included gardens, dining rooms, libraries, and decorative mosaics that reflected the owner's wealth.
+</p>
+
+<p>
+Many ordinary citizens lived in apartment buildings known as <strong>insulae</strong>. These multi-storey structures housed much of the urban population but were often crowded and vulnerable to fire. Despite these challenges, they enabled Rome to support one of the largest populations in the ancient world.
+</p>
+
+<p>
+Public architecture demonstrated the power and prosperity of the Roman state. Buildings such as the <strong>Colosseum</strong>, the <strong>Pantheon</strong>, and the <strong>Roman Forum</strong> served political, religious, commercial, and entertainment purposes while showcasing Roman engineering skill.
+</p>
+
+<div class="alert alert-secondary">
+
+<h5>Engineering Achievement</h5>
+
+<p class="mb-0">
+Roman engineers perfected the use of arches, vaults, and concrete, allowing them to construct durable buildings, bridges, and aqueducts on a scale unmatched in the ancient world.
+</p>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/domus.jpg"
+class="card-img-top"
+alt="Reconstruction of a Roman house">
+
+<div class="card-body">
+
+<h5>Figure 6. A Roman Domus</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Reconstruction of a wealthy Roman house with an atrium.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman domus reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman aqueduct 8.jpg"
+class="card-img-top"
+alt="Roman aqueduct">
+
+<div class="card-body">
+
+<h5>Figure 7. Roman Aqueduct</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Pont du Gard or another preserved Roman aqueduct.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Pont du Gard Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="entertainment">
+
+<h2 class="mb-4">Entertainment and Leisure</h2>
+
+<p>
+Entertainment played an important role in Roman society and was enjoyed by people from many social classes. Public festivals, theatrical performances, athletic contests, chariot races, and gladiatorial games attracted thousands of spectators. Many of these events were sponsored by wealthy politicians or emperors, who used them to gain public support and celebrate military victories or religious festivals.
+</p>
+
+<p>
+The <strong>Colosseum</strong>, completed during the reign of Emperor Titus in <strong>AD 80</strong>, became one of Rome's greatest entertainment venues. Gladiatorial contests, animal hunts, and dramatic public spectacles were held there before audiences that sometimes exceeded fifty thousand people. Although these events are among the most famous aspects of Roman history, they represented only one part of Roman entertainment.
+</p>
+
+<p>
+Another popular attraction was the <strong>Circus Maximus</strong>, where exciting chariot races drew enormous crowds. Romans also enjoyed attending theatres, visiting public baths, playing board games, reading literature, exercising in gymnasiums, and gathering in markets and public squares to socialize.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Interior of the Colosseum.jpg"
+class="card-img-top"
+alt="Interior of the Colosseum">
+
+<div class="card-body">
+
+<h5>Figure 8. The Colosseum</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Interior photograph of the Colosseum showing the arena.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Colosseum interior Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="army">
+
+<h2 class="mb-4">The Roman Army</h2>
+
+<p>
+The Roman army was one of the most disciplined and effective military forces in history. Its organization, training, engineering skills, and adaptability allowed Rome to expand from a small city-state into a vast empire spanning three continents. Roman soldiers not only fought battles but also constructed roads, bridges, forts, walls, and camps that strengthened Roman control over conquered territories.
+</p>
+
+<p>
+The backbone of the army was the <strong>legion</strong>, a highly organized military unit consisting of several thousand professional soldiers known as <strong>legionaries</strong>. These soldiers underwent rigorous training, maintained strict discipline, and carried standardized equipment including shields, swords, spears, helmets, and armour.
+</p>
+
+<p>
+Roman military success depended on careful planning, engineering, logistics, and leadership rather than numbers alone. Permanent forts, defensive walls such as <strong>Hadrian's Wall</strong>, and an extensive road network allowed troops to move rapidly throughout the empire whenever threats arose.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Standard Equipment</h4>
+
+<ul>
+
+<li>Helmet</li>
+
+<li>Shield (Scutum)</li>
+
+<li>Short Sword (Gladius)</li>
+
+<li>Spear (Pilum)</li>
+
+<li>Body Armour</li>
+
+<li>Sandals (Caligae)</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card h-100 shadow-sm">
+
+<div class="card-body">
+
+<h4>Military Strengths</h4>
+
+<ul>
+
+<li>Professional soldiers</li>
+
+<li>Excellent discipline</li>
+
+<li>Engineering expertise</li>
+
+<li>Strong leadership</li>
+
+<li>Organized logistics</li>
+
+<li>Efficient communication</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Roman legionaries.jpg"
+class="card-img-top"
+alt="Roman legionaries">
+
+<div class="card-body">
+
+<h5>Figure 9. Roman Legionaries</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical reconstruction of Roman legionaries in formation.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman legion reenactment Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="language">
+
+<h2 class="mb-4">Language and Literature</h2>
+
+<p>
+The principal language of Ancient Rome was <strong>Latin</strong>, which served as the language of government, administration, law, education, and literature. As Roman influence spread throughout Europe, Latin became the common language of scholarship and remained important long after the empire declined.
+</p>
+
+<p>
+Roman authors produced works that continue to be studied around the world. Writers such as <strong>Virgil</strong>, <strong>Cicero</strong>, <strong>Livy</strong>, <strong>Tacitus</strong>, and <strong>Ovid</strong> explored history, philosophy, poetry, politics, and rhetoric. Their writings provide valuable insight into Roman values, beliefs, and daily life while influencing generations of later scholars and authors.
+</p>
+
+<p>
+Today, Latin remains visible in scientific terminology, medicine, law, biology, and the names of many institutions. It also evolved into the Romance languages, including Italian, French, Spanish, Portuguese, and Romanian.
+</p>
+
+</section>
+
+<hr class="my-5">
+
+<section id="legacy">
+
+<h2 class="mb-4">The Legacy of the Romans</h2>
+
+<p>
+Few civilizations have left a legacy as extensive as that of Ancient Rome. Roman achievements influenced not only Europe but also many societies across the world. Governments borrowed ideas from Roman law and republican institutions, engineers studied Roman construction techniques, and architects adapted Roman designs for churches, government buildings, museums, and monuments.
+</p>
+
+<p>
+Roman roads encouraged trade and communication, while the Latin language influenced education and scholarship for centuries. Archaeological discoveries continue to reveal new information about Roman cities, military camps, and everyday life, helping historians understand one of history's most remarkable civilizations.
+</p>
+
+<div class="alert alert-success">
+
+<h5>Roman Influence Today</h5>
+
+<p class="mb-0">
+
+Roman civilization continues to influence:
+
+<strong>Law</strong>,
+<strong>Government</strong>,
+<strong>Architecture</strong>,
+<strong>Engineering</strong>,
+<strong>Language</strong>,
+<strong>Military Organization</strong>,
+<strong>Urban Planning</strong>,
+and
+<strong>Education</strong>.
+
+</p>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="gallery">
+
+<h2 class="mb-4">Gallery Suggestions</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/Roman Forum 8.jpg"
+class="card-img-top"
+alt="Roman Forum">
+
+<div class="card-body">
+
+<h6>Roman Forum</h6>
+
+<p>Search: Roman Forum Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/pantheon.jpg"
+class="card-img-top"
+alt="Pantheon">
+
+<div class="card-body">
+
+<h6>Pantheon</h6>
+
+<p>Search: Pantheon Rome Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/Circus Maximus.jpg"
+class="card-img-top"
+alt="Circus Maximus">
+
+<div class="card-body">
+
+<h6>Circus Maximus</h6>
+
+<p>Search: Circus Maximus Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="continue">
+
+<div class="text-center">
+
+<h2>Continue Your Journey Through Roman History</h2>
+
+<p class="lead">
+Now that you've learned about the people of Ancient Rome, continue exploring how they governed one of history's greatest civilizations and how their empire expanded across Europe, North Africa, and the Near East.
+</p>
+
+<a href="republic.html" class="btn btn-dark btn-lg me-3">
+The Roman Republic →
+</a>
+
+<a href="empire.html" class="btn btn-outline-dark btn-lg">
+The Roman Empire →
+</a>
+
+</div>
+
+</section>
+
+</main>
     <footer class="text-center py-4 mt-5 bg-dark text-white">
         <div class="container">
             <p class="mb-0">&copy; 2026 History of Rome Educational Project.</p>
