@@ -61,35 +61,7 @@ footer {
     font-size: 1.2rem;
     font-family: Cinzel, sans-serif;
 }
-/* =========================================
-   Historical Content Text Styling 
-   ========================================= */
 
-.wiki-content {
-    /* Optional: adds a little breathing room around the whole text block */
-    padding: 15px 0; 
-}
 
-.wiki-content p, 
-.wiki-content li {
-    font-family: Arial, Helvetica, sans-serif; /* Clean, standard sans-serif font */
-    font-size: 15px;                           /* Standard readable size */
-    line-height: 1.6;                          /* Gives lines room to breathe */
-    color: #202122;                            /* Very dark grey (easier on eyes than pure black) */
-}
-
-.wiki-content p {
-    margin-bottom: 12px; /* Space between paragraphs */
-}
-
-.wiki-content ul {
-    margin-top: 5px;
-    margin-bottom: 20px; /* Space after the list ends */
-    padding-left: 30px;  /* Indents the bullet points neatly */
-}
-
-.wiki-content li {
-    margin-bottom: 8px; /* Space between each individual bullet point */
-}
 
 
