@@ -10,33 +10,365 @@
 <body>
 
       <nav class="navbar navbar-expand-lg navbar-roman sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                   <li class="nav-item"><a class="nav-link" href="about.html">About Romans</a></li>
-                    <li class="nav-item"><a class="nav-link" href="periods.html">Periods of Rome</a></li>
-                    <li class="nav-item"><a class="nav-link" href="republic.html">The Republic</a></li>
-                    <li class="nav-item"><a class="nav-link" href="empire.html">The Empire</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="memberDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Become a Member
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="index.html">Roma Aeterna</a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <!-- ================= HOME ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Home page -->
+
+                        <a class="nav-link pe-1"
+                           href="index.html">
+                            Home
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="memberDropdown">
-        <li><a class="dropdown-menu-item dropdown-item" href="signup.html">Sign Up</a></li>
-        <li><a class="dropdown-menu-item dropdown-item" href="membership.html">Login</a></li>
-    </ul>
+
+                        <!-- Arrow opens dropdown -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="homeDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Home Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#history">
+                                    History of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#founding">
+                                    Founding of Rome
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#kingdom">
+                                    Roman Kingdom
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#republic-overview">
+                                    Roman Republic
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#empire-overview">
+                                    Roman Empire
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="index.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
                     </div>
-                </ul>
-            </div>
+
+                </li>
+
+                <!-- ================= ABOUT ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to About page -->
+
+                        <a class="nav-link pe-1"
+                           href="about.html">
+                            About Romans
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="aboutDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle About Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#society">
+                                    Roman Society
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#family">
+                                    Family Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#dailylife">
+                                    Daily Life
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#religion">
+                                    Religion
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#education">
+                                    Education
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#military">
+                                    Roman Military
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item"
+                                   href="about.html#legacy">
+                                    Legacy
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>                <!-- ================= REPUBLIC ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Republic page -->
+
+                        <a class="nav-link pe-1"
+                           href="republic.html">
+                            The Republic
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="republicDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Republic Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="republic.html#foundation">Foundation</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#conflict">Conflict of the Orders</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#punicwars">Punic Wars</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#expansion">Expansion</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#caesar">Julius Caesar</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#fall">Fall of the Republic</a></li>
+
+                            <li><a class="dropdown-item" href="republic.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= EMPIRE ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <div class="d-flex align-items-center">
+
+                        <!-- Click goes to Empire page -->
+
+                        <a class="nav-link pe-1"
+                           href="empire.html">
+                            The Empire
+                        </a>
+
+                        <!-- Arrow -->
+
+                        <a class="nav-link dropdown-toggle dropdown-toggle-split ps-1"
+                           href="#"
+                           id="empireDropdown"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+
+                            <span class="visually-hidden">
+                                Toggle Empire Menu
+                            </span>
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow">
+
+                            <li><a class="dropdown-item" href="empire.html#rise">Rise of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#augustus">Augustus</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#government">Government</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#paxromana">Pax Romana</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#army">Roman Army</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#emperors">Famous Emperors</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#christianity">Christianity</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#decline">Decline of the Empire</a></li>
+
+                            <li><a class="dropdown-item" href="empire.html#legacy">Legacy</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+
+                <!-- ================= PERIODS ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="periods.html">
+                        Periods of Rome
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= CONTACT ================= -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="contact.html">
+                        Contact
+                    </a>
+
+                </li>
+
+
+
+                <!-- ================= MEMBERSHIP ================= -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="memberDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+
+                        Become a Member
+
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="signup.html">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item"
+                               href="membership.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
         </div>
-    </nav>
+
+    </div>
+
+</nav>
     <header class="text-white text-center py-5" style="background: linear-gradient(rgba(139, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1200') center/cover no-repeat; border-bottom: 4px solid #D4AF37;">
     <div class="container py-4">
         <h1 class="display-5 fw-bold text-uppercase" style="font-family: 'Cinzel', serif; letter-spacing: 2px;">The Roman Republic</h1>
@@ -45,21 +377,1015 @@
 </header>
    
     <main class="container my-5">
-        <h1 class="mb-4 fw-bold" style="color: #8B0000;">The Roman Republic</h1>
-        
-        <div class="wiki-content border-start border-4 border-danger ps-4">
-            <p>The Roman Republic was established around 509 BC after the overthrow of the last Roman king, Lucius Tarquinius Superbus. Instead of a monarch, the new system was governed by two annually elected consuls and advised by a powerful Senate comprised of patricians.</p>
-            
-            <p>Over the next several centuries, Rome expanded its territory through a mix of diplomacy and military conquest. Key events of the Republic include:</p>
-            <ul>
-                <li><strong>The Conflict of the Orders:</strong> A centuries-long political struggle where the commoners (plebeians) successfully fought for equal political rights against the aristocratic patricians.</li>
-                <li><strong>The Punic Wars (264–146 BC):</strong> A series of three massive conflicts against the empire of Carthage. Rome's ultimate victory gave it total dominance over the Mediterranean Sea.</li>
-                <li><strong>The Late Republic Crises:</strong> Rapid expansion brought immense wealth but also severe social inequality and political corruption, leading to a series of civil wars.</li>
-            </ul>
 
-            <p>The Republic effectively ended when Julius Caesar crossed the Rubicon in 49 BC, sparking a civil war that culminated in his appointment as dictator for life. Following his assassination in 44 BC, his adopted heir Octavian ultimately dismantled the republican system in favor of absolute rule.</p>
-        </div>
-    </main>
+<h1 class="display-5 fw-bold mb-4" style="color:#8B0000;">
+The Roman Republic
+</h1>
+
+<p >
+The Roman Republic was one of the most influential political systems of the ancient world. Established in <strong>509 BC</strong> after the overthrow of Rome's final king, it replaced monarchy with a government led by elected officials, powerful assemblies, and the Roman Senate. Over nearly five centuries, the Republic transformed Rome from a relatively small city-state in central Italy into the dominant power of the Mediterranean, laying the foundations for what would later become the Roman Empire.
+</p>
+
+<p>
+The Republic was characterized by a complex system of shared authority intended to prevent any one individual from gaining absolute power. Citizens elected magistrates to administer the state, while the Senate advised on foreign policy, finances, military affairs, and legislation. Although political participation was largely limited to male citizens and social inequality remained significant, the Republic introduced ideas of civic duty, public service, and constitutional government that influenced later political systems throughout history.
+</p>
+
+<p>
+The Republic also witnessed some of the most significant events in Roman history, including the conquest of Italy, the Punic Wars against Carthage, the expansion into Greece and the eastern Mediterranean, the rise of influential generals such as Scipio Africanus and Julius Caesar, and the civil wars that ultimately brought republican government to an end.
+</p>
+
+
+<h2 class="mb-4">The Birth of the Roman Republic</h2>
+
+<p>
+According to Roman tradition, the Republic began in <strong>509 BC</strong> after the removal of the final Roman king, <strong>Lucius Tarquinius Superbus</strong>, commonly known as Tarquin the Proud. His reign was remembered by later Roman historians as harsh and tyrannical. The immediate cause of the revolution was the outrage surrounding the assault of the noblewoman <strong>Lucretia</strong>, whose death inspired leading Romans to overthrow the monarchy and establish a new form of government.
+</p>
+
+<p>
+Instead of concentrating power in the hands of a king, the Romans created a political system that distributed authority among several institutions. Executive power was shared by two elected <strong>consuls</strong>, each serving a one-year term. This arrangement ensured that no single individual could dominate the state, as each consul possessed the authority to veto the other's decisions.
+</p>
+
+<p>
+The establishment of the Republic marked a significant turning point in Roman history. It introduced a government that emphasized public service, civic responsibility, and the rule of law. Although the Republic was not democratic in the modern sense, it represented an important departure from monarchy and became the foundation for Rome's remarkable expansion over the following centuries.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Artistic depiction of the expulsion of Tarquin the Proud.jpg"
+class="card-img-top"
+alt="Artistic depiction of the expulsion of Tarquin the Proud">
+
+<div class="card-body">
+
+<h5>Figure 1. The End of the Roman Monarchy</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical artwork depicting the expulsion of Tarquin the Proud or the founding of the Republic.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Expulsion of Tarquin the Proud Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="government">
+
+<h2 class="mb-4">Government of the Roman Republic</h2>
+
+<p>
+The Roman Republic developed one of the most sophisticated political systems of the ancient world. Rather than placing all authority in a single ruler, power was divided among elected officials, popular assemblies, and the Senate. This balance helped maintain political stability for centuries, although competition between powerful families and ambitious leaders frequently created tension.
+</p>
+
+<p>
+Roman citizens participated in public life by voting in assemblies that elected magistrates and approved certain laws. However, voting rights were not equally distributed, and wealthier citizens often exercised greater influence. Despite these limitations, the Republic introduced important concepts of constitutional government that inspired later political systems.
+</p>
+
+<div class="row g-4 mt-3">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Key Principles</h4>
+
+<ul>
+
+<li>Annual elections</li>
+
+<li>Shared political authority</li>
+
+<li>Checks on executive power</li>
+
+<li>Rule of law</li>
+
+<li>Civic responsibility</li>
+
+<li>Public service</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Main Institutions</h4>
+
+<ul>
+
+<li>The Senate</li>
+
+<li>Two Consuls</li>
+
+<li>Popular Assemblies</li>
+
+<li>Praetors</li>
+
+<li>Quaestors</li>
+
+<li>Censors</li>
+
+<li>Tribunes of the Plebs</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="senate">
+
+<h2 class="mb-4">The Roman Senate</h2>
+
+<p>
+The Roman Senate was the most influential political institution of the Republic. Although it did not officially create laws in the same way as the popular assemblies, its advice, decisions, and recommendations carried enormous authority. Composed primarily of experienced former magistrates from Rome's leading families, the Senate directed foreign policy, supervised public finances, managed state religion, and advised military commanders during times of war.
+</p>
+
+<p>
+Membership in the Senate was considered one of the highest honours a Roman citizen could achieve. Senators debated important issues affecting the Republic, including declarations of war, diplomatic relations, taxation, provincial administration, and public construction projects. While magistrates changed every year, the Senate provided continuity and long-term experience, making it the central institution of Roman government for centuries.
+</p>
+
+<p>
+Despite its prestige, the Senate often became the centre of political rivalry. Powerful senators competed for influence, formed alliances, and occasionally blocked reforms proposed by political opponents. These struggles became increasingly intense during the final century of the Republic, contributing to political instability.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Illustration of the Roman Senate.jpg"
+class="card-img-top"
+alt="Illustration of the Roman Senate">
+
+<div class="card-body">
+
+<h5>Figure 2. Meeting of the Roman Senate</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical painting or reconstruction showing senators gathered inside the Curia.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman Senate Curia reconstruction Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="magistrates">
+
+<h2 class="mb-4">Magistrates and Public Offices</h2>
+
+<p>
+The Republic relied on elected officials known as <strong>magistrates</strong> to administer the government. Each office carried specific duties, and most positions were held for only one year. This limited the accumulation of personal power and encouraged accountability to the Roman people.
+</p>
+
+<p>
+Young politicians generally advanced through a sequence of public offices known as the <em>cursus honorum</em>, or "course of honours." Success required military service, political skill, and public support. By progressing through these offices, Roman citizens gained administrative experience before seeking higher positions.
+</p>
+
+<div class="table-responsive shadow-sm my-4">
+
+<table class="table table-bordered table-striped align-middle">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Office</th>
+
+<th>Main Responsibilities</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td><strong>Consuls</strong></td>
+
+<td>Highest elected officials; commanded armies, presided over the Senate, and supervised government administration.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Praetors</strong></td>
+
+<td>Administered justice and acted as judges or military commanders when required.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Quaestors</strong></td>
+
+<td>Managed public finances, treasury records, and military accounts.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Aediles</strong></td>
+
+<td>Maintained public buildings, markets, roads, festivals, and grain supplies.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Censors</strong></td>
+
+<td>Conducted the census, supervised public morality, and reviewed Senate membership.</td>
+
+</tr>
+
+<tr>
+
+<td><strong>Tribunes of the Plebs</strong></td>
+
+<td>Protected the rights of plebeians and possessed the power to veto certain government decisions.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="alert alert-info">
+
+<h5>Interesting Fact</h5>
+
+<p class="mb-0">
+
+Most Roman magistrates served <strong>without receiving a salary</strong>. Public office was viewed as a civic responsibility and an opportunity to gain honour, prestige, and political influence rather than personal income.
+
+</p>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="orders">
+
+<h2 class="mb-4">The Conflict of the Orders</h2>
+
+<p>
+During the early Republic, Roman society remained deeply divided between two principal social groups: the <strong>patricians</strong>, who belonged to wealthy aristocratic families, and the <strong>plebeians</strong>, who represented the majority of free Roman citizens. Although plebeians served in the army, paid taxes, and contributed to Rome's economy, they initially possessed fewer political rights than the patricians.
+</p>
+
+<p>
+This imbalance led to a long political struggle known as the <strong>Conflict of the Orders</strong>, lasting from approximately <strong>494 BC to 287 BC</strong>. Plebeians organized peaceful protests, refused military service at times, and demanded greater political representation. Through gradual reforms, they secured the right to elect their own officials, known as the <strong>Tribunes of the Plebs</strong>, who could veto decisions that threatened plebeian interests.
+</p>
+
+<p>
+One of the most significant achievements of this period was the creation of the <strong>Twelve Tables</strong>, Rome's first written legal code. Displayed publicly, these laws ensured that legal procedures were no longer known only to the aristocracy, making justice more transparent for Roman citizens.
+</p>
+
+<div class="row g-4 mt-3">
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Patricians</h4>
+
+<ul>
+
+<li>Noble families</li>
+
+<li>Large landowners</li>
+
+<li>Dominated early politics</li>
+
+<li>Held many religious offices</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Plebeians</h4>
+
+<ul>
+
+<li>Farmers</li>
+
+<li>Merchants</li>
+
+<li>Craftsmen</li>
+
+<li>Soldiers</li>
+
+<li>Gradually gained political rights</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/44.jpg"
+class="card-img-top"
+alt="Representation of the Twelve Tables">
+
+<div class="card-body">
+
+<h5>Figure 3. The Twelve Tables</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+An artistic representation or museum exhibit of the Twelve Tables.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Twelve Tables Roman law Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="expansion">
+
+<h2 class="mb-4">Expansion Across Italy</h2>
+
+<p>
+During the fourth and third centuries BC, the Roman Republic steadily expanded beyond the city of Rome and gradually brought most of the Italian Peninsula under its control. This expansion was achieved through a combination of military campaigns, strategic alliances, diplomacy, and the establishment of Roman colonies. Rather than ruling every conquered community in the same way, Rome often allowed local governments to continue operating while requiring loyalty, military service, and cooperation with the Republic.
+</p>
+
+<p>
+One of Rome's greatest strengths was its ability to integrate conquered peoples into its political system. Some communities received full Roman citizenship, while others were granted partial rights or became allied states. This flexible approach created a network of allies that supplied soldiers and resources, greatly strengthening Rome's military power.
+</p>
+
+<p>
+Roman engineers also played a vital role in expansion by constructing durable roads that connected cities, military camps, and trading centres. These roads allowed armies to move rapidly across Italy, improved communication, encouraged commerce, and strengthened Roman authority throughout the peninsula.
+</p>
+
+<div class="alert alert-secondary">
+
+<h5>Key Achievement</h5>
+
+<p class="mb-0">
+By approximately <strong>265 BC</strong>, Rome had established dominance over nearly the entire Italian Peninsula, placing it in direct competition with other powerful Mediterranean states, especially <strong>Carthage</strong>.
+</p>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Map showing Roman expansion across Italy.jpg"
+class="card-img-top"
+alt="Map showing Roman expansion across Italy">
+
+<div class="card-body">
+
+<h5>Figure 4. Roman Expansion in Italy</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical map showing Rome's territorial growth before the Punic Wars.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Roman Republic Italy map Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="punic">
+
+<h2 class="mb-4">The Punic Wars</h2>
+
+<p>
+The Punic Wars were a series of three major conflicts fought between the Roman Republic and the powerful North African city of <strong>Carthage</strong> between <strong>264 BC</strong> and <strong>146 BC</strong>. These wars determined which state would dominate the western Mediterranean and are considered among the most important conflicts of the ancient world.
+</p>
+
+<p>
+Carthage possessed one of the strongest navies of its time and controlled extensive trade networks throughout the Mediterranean. Rome, meanwhile, had become the dominant power in Italy and sought to protect its growing interests overseas. Competition between these two expanding powers eventually led to open warfare.
+</p>
+
+<h3 class="mt-5 mb-3">The First Punic War (264–241 BC)</h3>
+
+<p>
+The First Punic War began over control of the island of Sicily. Since Carthage had superior naval forces, Rome built a powerful fleet almost from scratch. Through determination, innovation, and several hard-fought victories, the Romans defeated Carthage and gained control of Sicily, which became Rome's first overseas province.
+</p>
+
+<h3 class="mt-5 mb-3">The Second Punic War (218–201 BC)</h3>
+
+<p>
+The Second Punic War is remembered for the remarkable campaigns of the Carthaginian general <strong>Hannibal Barca</strong>. In one of history's greatest military achievements, Hannibal led his army—including war elephants—across the Alps into Italy. He won several spectacular victories against Roman armies, including the famous Battle of Cannae in 216 BC.
+</p>
+
+<p>
+Despite these successes, Hannibal was unable to capture Rome itself. The Roman general <strong>Scipio Africanus</strong> eventually carried the war into North Africa, forcing Hannibal to return home. At the decisive <strong>Battle of Zama</strong> in 202 BC, Scipio defeated Hannibal, ending Carthage's position as Rome's greatest rival.
+</p>
+
+<h3 class="mt-5 mb-3">The Third Punic War (149–146 BC)</h3>
+
+<p>
+The Third Punic War ended with the complete destruction of Carthage. After a lengthy siege, Roman forces captured the city in <strong>146 BC</strong>. Carthage was destroyed, its territory became a Roman province, and Rome emerged as the dominant power throughout the western Mediterranean.
+</p>
+
+<div class="table-responsive shadow-sm my-4">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>War</th>
+
+<th>Years</th>
+
+<th>Result</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>First Punic War</td>
+
+<td>264–241 BC</td>
+
+<td>Rome gained Sicily.</td>
+
+</tr>
+
+<tr>
+
+<td>Second Punic War</td>
+
+<td>218–201 BC</td>
+
+<td>Scipio defeated Hannibal at Zama.</td>
+
+</tr>
+
+<tr>
+
+<td>Third Punic War</td>
+
+<td>149–146 BC</td>
+
+<td>Carthage was destroyed.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Hannibal crossing the Alps.jpg"
+class="card-img-top"
+alt="Hannibal crossing the Alps">
+
+<div class="card-body">
+
+<h5>Figure 5. Hannibal Crossing the Alps</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Painting depicting Hannibal leading his army and elephants across the Alps.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Hannibal crossing the Alps Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Battle of Zama.jpg"
+class="card-img-top"
+alt="Battle of Zama">
+
+<div class="card-body">
+
+<h5>Figure 6. The Battle of Zama</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical artwork illustrating Scipio Africanus defeating Hannibal.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Battle of Zama Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+<div class="alert alert-warning">
+
+<h5>Did You Know?</h5>
+
+<p class="mb-0">
+Hannibal's march across the Alps with thousands of soldiers, horses, and war elephants remains one of the most remarkable military campaigns in history. Despite difficult terrain and harsh weather, his army successfully entered Italy and won several major victories against Rome.
+</p>
+
+</div>
+
+</section><hr class="my-5">
+
+<section id="caesar">
+
+<h2 class="mb-4">Julius Caesar and the Crisis of the Republic</h2>
+
+<p>
+By the first century BC, the Roman Republic faced increasing political instability. Military victories had brought enormous wealth and vast new territories, but they also widened the gap between rich and poor. Powerful generals gained the loyalty of their soldiers, political violence became more common, and competition for influence within the Senate intensified. These challenges weakened the republican system that had governed Rome for centuries.
+</p>
+
+<p>
+One of the most influential figures of this period was <strong>Gaius Julius Caesar</strong>. Born into a patrician family, Caesar distinguished himself as a soldier, politician, and writer. His conquest of <strong>Gaul</strong> between 58 BC and 50 BC greatly expanded Roman territory and earned him immense popularity among both the army and the Roman people.
+</p>
+
+<p>
+As Caesar's influence grew, tensions developed between him and the Senate, particularly with the general <strong>Pompey the Great</strong>. The Senate ordered Caesar to surrender his command and return to Rome as a private citizen. Instead, in <strong>49 BC</strong>, Caesar crossed the <strong>Rubicon River</strong> with his army—an act considered a declaration of civil war.
+</p>
+
+<p>
+Following several military victories, Caesar became the dominant leader of Rome and was appointed <strong>dictator for life</strong> in 44 BC. While many admired his reforms, others feared that he intended to become king and permanently end the Republic.
+</p>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Bust of Julius Caesar.jpg"
+class="card-img-top"
+alt="Bust of Julius Caesar">
+
+<div class="card-body">
+
+<h5>Figure 7. Julius Caesar</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Marble bust of Julius Caesar.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Julius Caesar bust Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="fall">
+
+<h2 class="mb-4">The Fall of the Roman Republic</h2>
+
+<p>
+On <strong>15 March 44 BC</strong>, a date remembered as the <strong>Ides of March</strong>, Julius Caesar was assassinated by a group of senators led by <strong>Marcus Junius Brutus</strong> and <strong>Gaius Cassius Longinus</strong>. The conspirators believed that removing Caesar would preserve the Republic and prevent the establishment of a monarchy.
+</p>
+
+<p>
+Instead of restoring political stability, Caesar's death triggered another series of civil wars. His adopted heir <strong>Octavian</strong> formed the <strong>Second Triumvirate</strong> with <strong>Mark Antony</strong> and <strong>Lepidus</strong> to defeat Caesar's assassins. Although they initially cooperated, rivalry soon developed between Octavian and Antony.
+</p>
+
+<p>
+The decisive moment came at the <strong>Battle of Actium</strong> in <strong>31 BC</strong>, where Octavian defeated the combined forces of Mark Antony and Queen Cleopatra VII of Egypt. Four years later, in <strong>27 BC</strong>, the Senate granted Octavian the title <strong>Augustus</strong>. Historians traditionally regard this event as the beginning of the Roman Empire and the end of the Roman Republic.
+</p>
+
+<div class="alert alert-danger">
+
+<h5>The End of an Era</h5>
+
+<p class="mb-0">
+Although republican institutions such as the Senate continued to exist, real political authority increasingly rested with Augustus and the emperors who followed him.
+</p>
+
+</div>
+
+<!-- IMAGE PLACEHOLDER -->
+
+<div class="card shadow-sm my-4">
+
+<img src="images/Assassination of Julius Caesar.jpg"
+class="card-img-top"
+alt="Assassination of Julius Caesar">
+
+<div class="card-body">
+
+<h5>Figure 8. The Ides of March</h5>
+
+<p>
+
+<strong>Suggested Image:</strong>
+
+Historical painting of the assassination of Julius Caesar.
+
+<br><br>
+
+<strong>Search:</strong>
+
+Death of Julius Caesar painting Wikimedia Commons
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="timeline">
+
+<h2 class="mb-4">Timeline of the Roman Republic</h2>
+
+<div class="table-responsive shadow-sm">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+
+<th>Year</th>
+
+<th>Event</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>509 BC</td>
+
+<td>Roman Republic established after the overthrow of Tarquin the Proud.</td>
+
+</tr>
+
+<tr>
+
+<td>451–450 BC</td>
+
+<td>The Twelve Tables become Rome's first written laws.</td>
+
+</tr>
+
+<tr>
+
+<td>390 BC</td>
+
+<td>Rome is attacked and occupied by the Gauls.</td>
+
+</tr>
+
+<tr>
+
+<td>264–146 BC</td>
+
+<td>The Three Punic Wars are fought against Carthage.</td>
+
+</tr>
+
+<tr>
+
+<td>202 BC</td>
+
+<td>Scipio Africanus defeats Hannibal at the Battle of Zama.</td>
+
+</tr>
+
+<tr>
+
+<td>58–50 BC</td>
+
+<td>Julius Caesar conquers Gaul.</td>
+
+</tr>
+
+<tr>
+
+<td>49 BC</td>
+
+<td>Caesar crosses the Rubicon.</td>
+
+</tr>
+
+<tr>
+
+<td>44 BC</td>
+
+<td>Julius Caesar is assassinated.</td>
+
+</tr>
+
+<tr>
+
+<td>31 BC</td>
+
+<td>Battle of Actium.</td>
+
+</tr>
+
+<tr>
+
+<td>27 BC</td>
+
+<td>Augustus becomes Rome's first emperor.</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="legacy">
+
+<h2 class="mb-4">The Legacy of the Roman Republic</h2>
+
+<p>
+Although the Republic eventually gave way to imperial rule, its institutions and political ideas left a lasting mark on history. The concepts of elected officials, written laws, civic responsibility, checks on authority, and public debate influenced later governments across Europe and the Americas. Many constitutional systems continue to reflect principles first developed during the Roman Republic.
+</p>
+
+<p>
+Roman law also became one of the Republic's greatest contributions to world history. Its legal traditions shaped civil law systems that remain influential today, while the Republic's emphasis on citizenship and public service inspired political thinkers for centuries.
+</p>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Government</h4>
+
+<p>
+Ideas of representative institutions and divided political authority influenced many later constitutions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Law</h4>
+
+<p>
+Roman legal principles continue to shape courts and legal systems around the world.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm h-100">
+
+<div class="card-body">
+
+<h4>Citizenship</h4>
+
+<p>
+The Republic emphasized civic duty, public service, and participation in government.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="gallery">
+
+<h2 class="mb-4">Historical Gallery</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/Roman Forum.jpg" class="card-img-top" alt="Roman Forum">
+
+<div class="card-body">
+
+<h6>Roman Forum</h6>
+
+<p>Search: Roman Forum Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/Scipio Africanus.jpg" class="card-img-top" alt="Scipio Africanus">
+
+<div class="card-body">
+
+<h6>Scipio Africanus</h6>
+
+<p>Search: Scipio Africanus bust Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-sm">
+
+<img src="images/Augustus.jpg" class="card-img-top" alt="Augustus">
+
+<div class="card-body">
+
+<h6>Augustus</h6>
+
+<p>Search: Augustus Prima Porta Wikimedia Commons</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<hr class="my-5">
+
+<section id="continue">
+
+<div class="text-center">
+
+<h2>Continue to the Roman Empire</h2>
+
+<p class="lead">
+The Republic laid the foundations for one of the greatest empires in history. Continue to the next section to explore how Augustus transformed Rome into the Roman Empire, the Pax Romana, famous emperors, territorial expansion, and the eventual decline of imperial rule.
+</p>
+
+<a href="empire.html" class="btn btn-dark btn-lg">
+Explore the Roman Empire →
+</a>
+
+</div>
+
+</section>
+
+</main>
 
     <footer class="text-center py-4 mt-5 bg-dark text-white">
         <div class="container">
